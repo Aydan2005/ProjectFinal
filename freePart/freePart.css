@@ -117,9 +117,9 @@ body::-webkit-scrollbar {
     background-color: darkgrey;
     color: white;
 } */
-.home-image{
+/* .home-image{
     height: 876px;
-}
+} */
 .home-image1{
     width: 100%;
 }
@@ -149,6 +149,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 610px;
     background-color: rgb(255, 246, 233);
+    box-shadow: 0px 0px 31px 9px rgba(0, 0, 0, 0.45);
 }
 .section2-about{
     text-align: center;
@@ -192,7 +193,10 @@ body::-webkit-scrollbar {
 .section3-container2{
     width: 100%;
     height: 650px;
-    position: absolute;
+    background: url(./img/image1/backgroundForMenu.png);
+    background-size: cover; /* Şəkilin div-i tam örtməsini təmin edir */
+    background-repeat: no-repeat;
+    /* position: absolute; */
     background-color: rgba(255, 255, 255, 0.6);
     top: 1486px;
 }
@@ -216,7 +220,7 @@ body::-webkit-scrollbar {
     font-size: 25px;
     line-height: 50px;
     font-weight: bold;
-    padding: 20px 40px 40px;
+    padding: 0px 40px;
 }
 .section3-part2{
     display: grid;
@@ -360,8 +364,8 @@ body::-webkit-scrollbar {
 .display-for-carousel{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 180px;
+    justify-content: space-evenly;
+    /* gap: 180px; */
     margin: 40px;
 }
 
@@ -456,4 +460,172 @@ body::-webkit-scrollbar {
 .forFooter{
     display: flex;
     gap: 30px;
+}
+@media (min-width:1431px) and (max-width:1600px){
+    .main-info{
+        border-top-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+        width: 600px;
+        height: 250px;
+    }
+    .welcome-header{
+        font-size: 55px;
+        padding: 13px;
+    }
+    .ofisiant{
+        padding: 60px 0px;
+    }
+    .section2-about{
+        font-size: 60px;
+    }
+    .forAbout{
+        gap: 20px;
+    }
+    .section2-info{
+        width: 600px;
+        font-size: 24px;
+    }
+    .ofisiant-img{
+        width: 500px;
+    }
+    .section3-header{
+        font-size: 55px;
+    }
+    .section3-text1{
+        font-size: 35px;
+        padding: 20px 40px 40px;
+    }
+    .section3-part2{
+        padding: 30px 17px;
+    }
+    .part2-item-header{
+        font-size: 35px;
+    }
+    .section4{
+        height: 600px;
+    }
+    .section4-header{
+        font-size: 55px;
+    }
+    .btn-reservation {
+        margin: 0px 0px 0px 400px;   
+    }
+    .section4-item1-img{
+        width: 500px;
+    }
+    .section4-item1{
+        height: 330px;
+    }
+    .section4-types-item{
+        padding: 10px 30px;
+    }
+    .btn-reservation{
+        margin: 10px 0px 0px 400px;
+    }
+    .section5-header{
+        font-size: 55px;
+    }
+    .section5{
+        height: 500px;
+    }
+}
+@media (min-width:1000px) and (max-width:1431px){
+    .main-info{
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        width: 500px;
+        height: 250px;
+        left: 45%;
+        top: 37vh;
+    }
+    .welcome-header{
+        font-size: 45px;
+        padding: 13px;
+    }
+    .ofisiant{
+        margin: -107px auto 0px;
+        padding: 0px;
+    }
+    .section2{
+        height: 630px;
+    }
+    .forAbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section2-info{
+        font-size: 20px;
+        padding: 15px 40px 0px 40px;
+    }
+    .ofisiant-img{
+        width: 500px;
+    }
+    .section2-about{
+        font-size: 45px;
+        padding: 20px 20px 0px;
+    }
+    .section2-info{
+        width: 100%;
+    }
+    .section3-container2{
+        background-size: 100% 150%;
+        height: 600px;
+    }
+    .section3-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr;
+    }
+    .section3-header{
+        font-size: 45px;
+    }
+    .section3-text1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0px 40px 20px;
+    }
+    .section3-text2{
+        line-height: 30px;
+    }
+    .section3-part2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 75px;
+        column-gap: 50px;
+        padding: 20px 17px;
+    }
+    .part2-item-header , .part2-item-main{
+        font-size: 20px;
+    }
+    .section4-container{
+        gap: 0px;
+    }
+    .section4-item1-img {
+        width: 460px;
+    }
+    .section4-item1{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .section4-header{
+        font-size: 45px;
+    }
+    .section4-text1{
+        font-size: 25px;
+    }
+    .section4-types{
+        font-size: 25px;
+    }
+    .section4-types-item{
+        font-size: 20px;
+    }
+    .btn-reservation{
+        margin: 0px 0px 0px 320px;   
+
+    }
+    .section5-header{font-size: 45px;}
+    .footer-header{font-size: 45px;}
 }

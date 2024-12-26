@@ -116,3 +116,33 @@ button:hover {
 .hidden{
     display: none;
 }
+
+@media (max-width:1010px){
+    .content{
+        flex-direction: column;
+    }
+}
+@media(max-width:512px){
+    .header-logo{
+        width: 300px;
+    }
+    .sign{
+        width: 100px;
+        padding: 5px 10px;
+        height: 30px;
+    }
+    .myForm{
+        width: 300px;
+    }
+    .inputs{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .label{
+        font-size: 16px;
+    }
+    .submit{
+        height: 35px;
+        padding: 7px 10px;
+    }
+}

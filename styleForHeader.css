@@ -187,7 +187,7 @@ body::-webkit-scrollbar {
         gap: 5px;
         font-size: 30px;
         position: absolute;
-        top: 28vh;
+        top: 26vh;
         left: 1%;
     }
 
@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
         width: 40px;
     }
 }
-@media (min-width: 991px) and (max-width: 1200px){
+@media (min-width: 991px) and (max-width: 1240px){
     .header-container {
         display: flex;
         justify-content: space-around;
@@ -234,7 +234,7 @@ body::-webkit-scrollbar {
     }
     
 }
-@media (min-width: 1200px){
+@media (min-width: 1240px){
     .header-container {
         display: flex;
         justify-content: space-around;

@@ -7,16 +7,11 @@
 }
 body, html {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100%; */
     background: #F5F5F5;
     font-family: 'Quicksand', sans-serif;
 }
 .header{
     display: flex;
-    /* width: 100%; */
     height: 100px;
     justify-content: space-evenly;
     align-items: center;
@@ -32,11 +27,12 @@ body, html {
     font-size: 50px;
     padding: 10px;
     font-weight: 700;
-    /* box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: color 0.3 ease;
+    cursor: pointer;
 }
 .language-main{
-    font-size: 30px;
     position: relative;
     transition: color 0.3 ease;
     cursor: pointer;
@@ -45,11 +41,6 @@ body, html {
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-}
-.payment{
-    position: relative;
-    transition: color 0.3 ease;
-    cursor: pointer;
 }
 .language-main:hover {
     color: #EF533D;
@@ -76,7 +67,6 @@ body, html {
     right: 0;
     bottom: -5px;
     height: 2px;
-    /* color: #EF533D; */
     background: #EF533D;
     transform: scaleX(0);
     transform-origin: right;
@@ -98,28 +88,16 @@ body, html {
     gap: 5px;
     font-size: 30px;
     position: absolute;
-    top: 9vh;
+    top: 10vh;
     left: 64%;
     z-index: 100;
 }
-/* .language{
-    background-color: white;
-    border: none;
-    padding: 5px;
-    transition: transform 0.3s ease;
-} */
-/* .language:hover{
-    transform: scale(1.08);
-    background-color: darkgrey;
-    color: white;
-} */
 .active{
     display: none;
 }
 .button-AZ, .button-EN, .button-RU{
     width: 100%;
     font-size: 20px;
-    /* height: 100%; */
     background-color: white;
     border: none;
     padding: 10px;
@@ -321,4 +299,37 @@ body, html {
 
 button:hover {
     background: #0F1626;
+}
+
+@media(max-width:620px){
+    .payment , .language-main{
+        font-size: 35px;
+    }
+    .language-part{
+        left: 50%;
+        top: 10vh;
+    }
+}
+@media(max-width:453px){
+    .payment , .language-main{
+        font-size: 20px;
+    }
+    .language-part{
+        left: 40%;
+        top: 10vh;
+    }
+    .Card {
+        width: 100%;
+        height: 242px;
+    }
+    .Form{
+        width: 100%;
+    }
+    .card-number{
+        font-size: 2.1em;
+    }
+    .pay{
+        padding: 0.5rem 0;
+        font-size: 1em;
+    }
 }

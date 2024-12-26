@@ -17,16 +17,11 @@ signIn.addEventListener("click", () => {
     forSignUp.classList.add("hidden");
 });
 
-// document.getElementById("navigateButton").addEventListener("click", () => {
-//     window.location.href = "newpage.html"; // Keçid ediləcək səhifənin ünvanı
-// });
-    
 let submit1 = document.querySelector(".submit1")
 submit1.addEventListener("click",(e)=>{
     e.preventDefault()
     window.location.href = "./premiumPart/premium.html"
 })
-
 
 let submit2 = document.querySelector(".submit2");
 submit2.addEventListener("click",(e)=>{
@@ -34,57 +29,50 @@ submit2.addEventListener("click",(e)=>{
     window.location.href = "./freePart/freePart.html";
 })
 
-
-
 const inputs1 = document.querySelectorAll('.req-inputs1');
-// const button = document.getElementById('submitButton');
+const passwordInput1 = document.querySelector("#password");
 
 function checkInputs1() {
-  // Əvvəlcə inputların doluluğunu yoxlamaq üçün dəyişən təyin edilir
   let allFilled1 = true;
-
-  // Hər inputu yoxlamaq üçün dövr
   for (let i = 0; i < inputs1.length; i++) {
     if (inputs1[i].value.trim() === '') {
-      allFilled1 = false; // Əgər hər hansı bir input boşdursa
-      break; // Daha yoxlamağa ehtiyac yoxdur, dövrü bitir
+      allFilled1 = false;
+      break;
     }
   }
-
-  // Düyməni aktiv və ya deaktiv etmək
+  if (passwordInput1.value.length < 6) { 
+    allFilled1 = false; 
+    alert("Password must be at least 6 characters long!"); 
+  }
   submit1.disabled = !allFilled1;
 }
 
-// Hər input dəyişdikdə yoxlama aparır
-inputs1.forEach(input => {
-  input.addEventListener('input', checkInputs1);
+inputs1.forEach(input => { 
+  input.addEventListener('input', () => { 
+    if (input.id === "name" || input.id === "surname"){ 
+      input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
+    } 
+    checkInputs1();
+  }); 
 });
 
-
-
-
-
 const inputs2 = document.querySelectorAll('.req-inputs2');
-// const button = document.getElementById('submitButton');
+const passwordInput2 = document.querySelector("#password-signin");
 
 function checkInputs2() {
-  // Əvvəlcə inputların doluluğunu yoxlamaq üçün dəyişən təyin edilir
   let allFilled2 = true;
-
-  // Hər inputu yoxlamaq üçün dövr
   for (let i = 0; i < inputs2.length; i++) {
     if (inputs2[i].value.trim() === '') {
-      allFilled2 = false; // Əgər hər hansı bir input boşdursa
-      break; // Daha yoxlamağa ehtiyac yoxdur, dövrü bitir
+      allFilled2 = false;
+      break;
     }
   }
-
-  // Düyməni aktiv və ya deaktiv etmək
+  if (passwordInput2.value.length < 6) { 
+    allFilled2 = false; 
+    alert("Password must be at least 6 characters long!"); 
+  }
   submit2.disabled = !allFilled2;
 }
-
-// Hər input dəyişdikdə yoxlama aparır
 inputs2.forEach(input => {
   input.addEventListener('input', checkInputs2);
 });
-
