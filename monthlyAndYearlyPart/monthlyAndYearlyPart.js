@@ -50,7 +50,7 @@ updateCarousel();
 let buttonMenu = document.querySelector(".go-to-menu");
 
 buttonMenu.addEventListener("click",()=>{
-  window.location.href = "../menuPart/menuPart.html"
+  window.location.href = "../paidMenu/paidmenu.html"
 })
 
 let languageMain = document.querySelector(".language-main")
@@ -60,4 +60,9 @@ languageMain.addEventListener("click",()=>{
 })
 document.querySelector(".button-AZ").addEventListener("click", () => {
   window.location.href = "../monthlyAndYearlyPartAZ/monthlyAndYearlyAZ.html"; 
+});
+
+
+document.querySelector(".btn-reservation").addEventListener("click", () => {
+  window.location.href = "../reservationPartForPremium/reservationPartForPremium.html"; 
 });

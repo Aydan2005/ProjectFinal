@@ -42,3 +42,8 @@ languageMain.addEventListener("click",()=>{
 document.querySelector(".button-EN").addEventListener("click", () => {
     window.location.href = "../reservationPartForPremium/reservationPartForPremium.html"; 
 });
+
+
+
+
+

@@ -10,66 +10,70 @@
     <header></header>
     <main>
         <section>
-            <div>
-                <video class="my-video" autoplay muted loop><source src="./img/DemoBackgroundSampleVideo.mp4"></video>
-                <div class="container">
-                    <div class="header">
-                        <div class="header-container">
-                            <img src="./img/logo2.png" alt="restaurant logo" class="header-logo">
-                        </div>
-                    </div>
-                    <div class="main-part">
-                        <div>
-                            <!-- qeydiyyatdan kecmek -->
-                            <button class="sign sign-up">Sign up</button>
-                            <!-- daxil olmaq -->
-                            <button class="sign sign-in">Sign in</button>
-                        </div>
-                        <div class="forSignUp">
-                            <form action="" class="myForm">
-                                <label for="name">Name:<span class="required-star">*</span></label>
-                                <input required id="name" class="inputs req-inputs1" type="text" placeholder="Enter your name...">
-
-                                <label for="surname">Surname:<span class="required-star">*</span></label>
-                                <input required id="surname" class="inputs req-inputs1" type="text" placeholder="Enter your surname...">
-
-                                <label for="username">Username:<span class="required-star">*</span></label>
-                                <input required id="username" class="inputs req-inputs1" type="text" placeholder="Enter your user name...">
-                                
-                                <label for="email">Email:<span class="required-star">*</span></label>
-                                <input required id="email" class="inputs req-inputs1" type="email" placeholder="Enter your email...">
-
-                                <label for="password">Password:<span class="required-star">*</span></label>
-                                <input required id="password" class="inputs req-inputs1" type="password" placeholder="Enter password...">
-
-                                <label for="address">Address:</label>
-                                <input id="address" class="inputs" type="text" placeholder="Enter your address...">
-
-                                <label for="favorite">Favorite:</label>
-                                <input id="favorite" class="inputs" type="text" placeholder="Enter your favorite...">
-
-                                <label class="notification">
-                                    Do you want to be notified of new notifications?
-                                    <input class="checkInput" type="checkbox">
-                                </label>
-                                <!-- <button class="submit submit1"><a href="./premiumPart/premium.html" class="link">Submit</a></button> -->
-                                <button class="submit submit1" disabled>Submit</button>
-                            </form>
-                        </div>
-                        <div class="forSignIn hidden">
-                            <form action="" class="myForm">
-                                <label for="username-signin">Username:<span class="required-star">*</span></label>
-                                <input id="username-signin" class="inputs req-inputs2" type="text" placeholder="Enter your user name...">
-                                <label for="email-signin">Email:<span class="required-star">*</span></label>
-                                <input id="email-signin" class="inputs req-inputs2" type="email" placeholder="Enter your email...">
-                                <label for="password-signin">Password:<span class="required-star">*</span></label>
-                                <input id="password-signin" class="inputs req-inputs2" type="password" placeholder="Enter password...">
-                                <button class="submit submit2" disabled>Submit</button>
-                            </form>
+        
+                <div  class="video-background container">
+                    <video autoplay muted loop id="video-background" class="video-background">
+                        <source src="./img/DemoBackgroundSampleVideo.mp4">
+                    </video>
+                    <div class="content">
+                        <!-- <div class="header"> -->
+                            <div class="header-container">
+                                <img src="./img/logo2.png" alt="restaurant logo" class="header-logo">
+                            </div>
+                        <!-- </div> -->
+                        <div class="main-part">
+                            <div>
+                                <!-- qeydiyyatdan kecmek -->
+                                <button class="sign sign-up">Sign up</button>
+                                <!-- daxil olmaq -->
+                                <button class="sign sign-in">Sign in</button>
+                            </div>
+                            <div class="forSignUp">
+                                <form action="" class="myForm">
+                                    <label for="name">Name:<span class="required-star">*</span></label>
+                                    <input required id="name" class="inputs req-inputs1" type="text" placeholder="Enter your name...">
+    
+                                    <label for="surname">Surname:<span class="required-star">*</span></label>
+                                    <input required id="surname" class="inputs req-inputs1" type="text" placeholder="Enter your surname...">
+    
+                                    <label for="username">Username:<span class="required-star">*</span></label>
+                                    <input required id="username" class="inputs req-inputs1" type="text" placeholder="Enter your user name...">
+                                    
+                                    <label for="email">Email:<span class="required-star">*</span></label>
+                                    <input required id="email" class="inputs req-inputs1" type="email" placeholder="Enter your email...">
+    
+                                    <label for="password">Password:<span class="required-star">*</span></label>
+                                    <input required id="password" class="inputs req-inputs1" type="password" placeholder="Enter password...">
+    
+                                    <label for="address">Address:</label>
+                                    <input id="address" class="inputs" type="text" placeholder="Enter your address...">
+    
+                                    <label for="favorite">Favorite:</label>
+                                    <input id="favorite" class="inputs" type="text" placeholder="Enter your favorite...">
+    
+                                    <label class="notification">
+                                        Do you want to be notified of new notifications?
+                                        <input class="checkInput" type="checkbox">
+                                    </label>
+                                    <!-- <button class="submit submit1"><a href="./premiumPart/premium.html" class="link">Submit</a></button> -->
+                                    <button class="submit submit1" disabled>Submit</button>
+                                </form>
+                            </div>
+                            <div class="forSignIn hidden">
+                                <form action="" class="myForm">
+                                    <label for="username-signin">Username:<span class="required-star">*</span></label>
+                                    <input id="username-signin" class="inputs req-inputs2" type="text" placeholder="Enter your user name...">
+                                    <label for="email-signin">Email:<span class="required-star">*</span></label>
+                                    <input id="email-signin" class="inputs req-inputs2" type="email" placeholder="Enter your email...">
+                                    <label for="password-signin">Password:<span class="required-star">*</span></label>
+                                    <input id="password-signin" class="inputs req-inputs2" type="password" placeholder="Enter password...">
+                                    <button class="submit submit2" disabled>Submit</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
     </main>
     <footer></footer>
