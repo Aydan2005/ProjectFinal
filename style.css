@@ -38,13 +38,11 @@ body{
     position: fixed;
     /* bottom: 6vh; */
     /* left: 56vw; */
-    top: 1.5vh;
+    top: 1vh;
     left: 56vw;
-
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    /* margin-top: 40px; */
 }
 .myForm {
     display: flex;
