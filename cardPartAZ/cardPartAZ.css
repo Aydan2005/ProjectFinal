@@ -26,7 +26,6 @@ body, html {
     left: 0px;
     right: 0px;
     z-index: 9999;
-
 }
 .payment{
     text-align: center;
@@ -103,17 +102,6 @@ body, html {
     left: 64%;
     z-index: 100;
 }
-/* .language{
-    background-color: white;
-    border: none;
-    padding: 5px;
-    transition: transform 0.3s ease;
-} */
-/* .language:hover{
-    transform: scale(1.08);
-    background-color: darkgrey;
-    color: white;
-} */
 .active{
     display: none;
 }
