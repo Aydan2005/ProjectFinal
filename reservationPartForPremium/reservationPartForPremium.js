@@ -40,3 +40,7 @@ languageMain.addEventListener("click",()=>{
 document.querySelector(".button-AZ").addEventListener("click", () => {
     window.location.href = "../reservationPartForPremiumAZ/reservationPartForPremiumAZ.html"; 
 });
+
+document.querySelector(".btn").addEventListener("click", () => {
+    window.location.href = "../monthlyAndYearlyPart/monthlyAndYearlyPart.html"; 
+});

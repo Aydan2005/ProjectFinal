@@ -42,3 +42,7 @@ languageMain.addEventListener("click",()=>{
 document.querySelector(".button-EN").addEventListener("click", () => {
     window.location.href = "../reservationPart/reservationPart.html"; 
 });
+
+document.querySelector(".btn").addEventListener("click", () => {
+    window.location.href = "../freePartAZ/freePartAZ.html"; 
+});

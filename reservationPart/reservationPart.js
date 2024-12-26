@@ -40,3 +40,6 @@ languageMain.addEventListener("click",()=>{
 document.querySelector(".button-AZ").addEventListener("click", () => {
     window.location.href = "../reservationPartAZ/reservationPartAZ.html"; 
 });
+document.querySelector(".btn").addEventListener("click", () => {
+    window.location.href = "../freePart/freePart.html"; 
+});

@@ -52,10 +52,10 @@
                     </div>
                 </div>
                 <div class="Form">
-                    <form onsubmit="return false">
+                    <form id="paymentForm">
                         <div class="Input">
                             <label>Kart Nömrəsi</label>
-                            <input id="number" type="number">
+                            <input id="number" type="text">
                         </div>
                         <div class="Input">
                             <label>Kart Sahibi</label>
@@ -96,7 +96,7 @@
                                 <input id="ccv" type="number">
                             </div>
                         </div>
-                        <button class="pay">Ödəniş Et</button>
+                        <button id="payButton" class="pay" disabled>Ödəniş Et</button>
                     </form>
                 </div>
             </div>

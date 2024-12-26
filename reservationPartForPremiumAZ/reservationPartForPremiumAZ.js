@@ -44,6 +44,8 @@ document.querySelector(".button-EN").addEventListener("click", () => {
 });
 
 
-
+document.querySelector(".btn").addEventListener("click", () => {
+    window.location.href = "../monthlyAndYearlyPartAZ/monthlyAndYearlyAZ.html"; 
+});
 
 

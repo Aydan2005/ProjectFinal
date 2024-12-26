@@ -130,8 +130,8 @@ body::-webkit-scrollbar {
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     background-color: rgba(255, 255, 255, 0.8);
-    top: 266px;
-    left: 789px;
+    top: 35vh;
+    left: 50%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
                 0 4px 6px rgba(0, 0, 0, 0.1);
 }

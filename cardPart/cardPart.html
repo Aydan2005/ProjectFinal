@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="./cardPart.css">
 </head>
 <body>
-    
     <main>
         <section>
             <div class="header">
@@ -39,7 +38,7 @@
                         </div>
                         <div class="card-date">
                             <label>Expiration Date</label>
-                            <div class="mono">1/2025</div>
+                            <div class="mono">01/2025</div>
                         </div>
                     </div>
                     <div class="back">
@@ -52,10 +51,10 @@
                     </div>
                 </div>
                 <div class="Form">
-                    <form onsubmit="return false">
+                    <form id="paymentForm">
                         <div class="Input">
                             <label>Card Number</label>
-                            <input id="number" type="number">
+                            <input id="number" type="text" maxlength="16">
                         </div>
                         <div class="Input">
                             <label>Card Holder</label>
@@ -82,10 +81,6 @@
                             <div class="Input">
                                 <label>Year</label>
                                 <select id="year">
-                                    <option value="2019">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2022">2022</option>
                                     <option value="2023">2023</option>
                                     <option value="2024">2024</option>
                                     <option value="2025">2025</option>
@@ -96,14 +91,12 @@
                                 <input id="ccv" type="number">
                             </div>
                         </div>
-                        <button class="pay">Make Payment</button>
+                        <button id="payButton" class="pay" disabled>Make Payment</button>
                     </form>
                 </div>
             </div>
-            
         </section>
     </main>
-
     <script src="./cardPart.js"></script>
 </body>
 </html>
