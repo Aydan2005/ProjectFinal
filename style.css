@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .myForm {
     display: flex;
@@ -63,10 +63,10 @@ label {
 .inputs {
     width: 100%;
     padding: 10px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .required-star{
     color: red;
