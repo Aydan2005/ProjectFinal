@@ -9,7 +9,7 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
-.header-container{
+/* .header-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
     transform: scale(1.08);
     background-color: darkgrey;
     color: white;
-}
+} */
 .home-image{
     height: 876px;
 }

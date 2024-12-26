@@ -23,12 +23,9 @@ drinksBtn.addEventListener("click",()=>{
 
 function filterItems(category) {
     const items = document.querySelectorAll('.main-item');
-    // const menuHeader = document.querySelector(".menu-header")
     items.forEach(item => {
         if (category === 'all' || item.classList.contains(category)) {
             item.style.display = 'grid';
-            // categoryHeader.textContent = `${category}`
-            // console.log(menuHeader);
         } else {
             item.style.display = 'none';
         }
@@ -69,17 +66,11 @@ filterItems('new-meals');
 
 
 
-
-// valyuta cevirme hissesi
-
-
-
-// API-dən məlumat alma funksiyası
 async function getExchangeRate() {
     try {
         const response = await fetch('https://v6.exchangerate-api.com/v6/e55b790e8387e029a03784e6/latest/USD');
         const data = await response.json();
-        return data.conversion_rates.AZN; // AZN üçün məzənnəni qaytarır
+        return data.conversion_rates.AZN; 
     } catch (error) {
         console.error('Məzənnəni əldə etmək mümkün olmadı:', error);
         alert('Məzənnəni əldə etmək mümkün olmadı. Daha sonra yenidən cəhd edin.');
@@ -87,7 +78,6 @@ async function getExchangeRate() {
     }
 }
 
-// Düymələrə event listener əlavə edin
 document.querySelectorAll('.convert-btn').forEach(button => {
     button.addEventListener('click', async (event) => {
         // hansi elemente click etmisikse onun ana elementi olan main-item
@@ -113,7 +103,7 @@ document.querySelectorAll('.convert-btn').forEach(button => {
 let languageMain = document.querySelector(".language-main")
 let languagePart = document.querySelector(".language-part")
 languageMain.addEventListener("click",()=>{
-    languagePart.classList.toggle("active")
+    languagePart.classList.toggle("active2")
 })
 
 document.querySelector(".button-AZ").addEventListener("click", () => {
@@ -189,6 +179,11 @@ document.querySelectorAll('.favorite-btn').forEach(button => {
 
 
 
+let burgerDiv = document.querySelector(".burger-div");
+let headerItems = document.querySelector(".header-items");
+burgerDiv.addEventListener("click", () => {
+    headerItems.classList.toggle("active1");
+});
 
 
 

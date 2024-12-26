@@ -9,7 +9,7 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
-.header-container{
+/* .header-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,24 +99,12 @@ body::-webkit-scrollbar {
     top: 7vh;
     left: 71.2%;
 }
-/* .language{
-    background-color: white;
-    border: none;
-    padding: 5px;
-    transition: transform 0.3s ease;
-} */
-/* .language:hover{
-    transform: scale(1.08);
-    background-color: darkgrey;
-    color: white;
-} */
 .active{
     display: none;
 }
 .button-AZ, .button-EN, .button-RU{
     width: 100%;
     font-size: 20px;
-    /* height: 100%; */
     background-color: white;
     border: none;
     padding: 10px;
@@ -128,79 +116,7 @@ body::-webkit-scrollbar {
     transform: scale(1.08);
     background-color: darkgrey;
     color: white;
-}
-/* .section1{
-    margin: 100px;
-}
-.section1-header{
-    font-size: 90px;
-    font-weight: 800;
-    color: saddlebrown;
-    text-align: center;
-
-}
-.grid-div{
-    margin-top: 2px 100px 50px 100px;
-    gap: 20px;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr ;  
-    grid-template-areas:  
-    "div1 div2"
-    "div3 div4"
-    "div5 div5"
-    ;
-}
-.div1{
-    grid-area: div1;
-    padding: 20px 50px;
-
-}
-.div2{
-    grid-area: div2;
-    padding: 20px 50px;
-
-}
-.div3{
-    grid-area: div3;
-    padding: 20px 50px;
-
-}
-.div4{
-    grid-area: div4;
-    padding: 20px 50px;
-
-}
-.div5{
-    grid-area: div5;
-    padding: 20px 50px;
-    width: 700px;
-}
-.div1-header, .div2-header, .div3-header, .div4-header, .div5-header{
-    font-size: 60px;
-}
-.div1-text, .div2-text, .div3-text, .div4-text, .div5-text{
-    font-size: 30px;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Dizayn - About bölməsi */
 
 
 .section1 {
