@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./paidMenuAZ.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="header-container">
+                <div><img src="./img/logo2.png" alt="restoran loqosu" class="header-logo"></div>
+                <div class="header-item"><a href="../monthlyAndYearlyPartAZ/monthlyAndYearlyAZ.html" class="header-link">Ana səhifə</a></div>
+                <div class="header-item"><a href="./paidMenuAZ.html" class="header-link">Menyu</a></div>
+                <div class="header-item"><a href="../aboutForPremiumAZ/aboutForPremiumAZ.html" class="header-link">Haqqımızda</a></div>
+                <div class="header-item">
+                    <div class="language-main">Dili dəyiş</div>
+                    <div class="language-part active">
+                        <div class="language"><button class="button-AZ">Az</button></div>
+                        <div class="language"><button class="button-EN">En</button></div>
+                    </div>
+                </div>
+                <div class="header-item header-profile"><a href="" class="header-link">MA</a></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="section1-container">
+                <div>
+                    <input type="text" id="search-Input" placeholder="Search...">
+                </div>
+                <div class="heart">Sevimlilər</div>
+            </div>
+            <div class="menu-header">Menyuda Yeni</div>
+        </section>
+        <section class="second-section">
+            <div class="section2-main">
+                <div class="filters">
+                    <div>
+                        <button class="new-meals" data-category="new-meals">Menyuda Yeni</button>
+                    </div>
+                    <div>
+                        <button class="filter-btns meals-btn" data-category="All-meals">-Yeməklər</button>
+                        <div class="filter-main-part meal passive">
+                            <button class="filter-btns" data-category="Breakfast">Səhər yeməyi</button>
+                            <button class="filter-btns" data-category="Main-dishes">Əsas yeməklər</button>
+                            <button class="filter-btns" data-category="Hot-dishes">İsti yeməklər(toyuq)</button>
+                            <button class="filter-btns" data-category="Burger">Burger</button>
+                            <button class="filter-btns" data-category="Pizza">Pizza</button>
+                            <button class="filter-btns" data-category="Sandwich">Sendviç</button>
+                            <button class="filter-btns" data-category="Kebabs">Kabablar</button>
+                            <button class="filter-btns" data-category="Salad">Salat</button>
+                            <button class="filter-btns" data-category="Pasta">Makaron</button>
+                            <button class="filter-btns" data-category="Pilaf">Plov</button>
+                            <button class="filter-btns" data-category="Taco">Tako</button>
+                            <button class="filter-btns" data-category="Roll">Rol</button>
+                            <button class="filter-btns" data-category="Sauce">Sous</button>
+                            <button class="filter-btns" data-category="Soup">Şorba</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="filter-btns sweets-btn" data-category="All-sweets">-Şirniyyatlar</button>
+                        <div class="filter-main-part sweet passive">
+                            <button class="filter-btns" data-category="Cake">Tort</button>
+                            <button class="filter-btns" data-category="Cheesecake">Çizkeyk</button>
+                            <button class="filter-btns" data-category="Waffle">Vafli</button>
+                            <button class="filter-btns" data-category="Crepe">Krep</button>
+                            <button class="filter-btns" data-category="Milk-sweets">Südlü şirniyyatlar</button> 
+                            <button class="filter-btns" data-category="Ice-cream-desserts">Dondurmalı desertlər</button>
+                            <button class="filter-btns" data-category="Pancake">Pankek</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="filter-btns bakery-btn" data-category="All-bakery">-Un məmulatları</button>
+                        <div class="filter-main-part bakery passive">
+                            <button class="filter-btns" data-category="Croissant">Kruassan</button>
+                            <button class="filter-btns" data-category="Shorgogal">Şorqoğal</button>
+                            <button class="filter-btns" data-category="Bagels">Bağel</button>
+                            <button class="filter-btns" data-category="Achma">Açma</button>
+                            <button class="filter-btns" data-category="Pogacha">Poğaça</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="filter-btns drinks-btn" data-category="All-drinks">-İçkilər</button>
+                        <div class="filter-main-part drink passive">
+                            <button class="filter-btns" data-category="Tea">Çay</button>
+                            <button class="filter-btns" data-category="Coffee">Qəhvə</button>
+                            <button class="filter-btns" data-category="Frozen-drinks">Dondurulmuş içkilər</button>
+                            <button class="filter-btns" data-category="Lemonade">Limonad</button>
+                            <button class="filter-btns" data-category="Smoothie">Smuzı</button>
+                            <button class="filter-btns" data-category="Mojito">Mojito</button>
+                            <button class="filter-btns" data-category="Freshers">Təzə sıxılmışlar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="main-container">
+                            <div class="main-item new-meals" data-name="Siqaretli Pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/FumePizza.jpg" alt=""></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name">Siqaretli Pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, siqaretli mal qabırğası, mozzarella pendiri, parmesan pendiri, pomidor sousu, krem sousu, rukola.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item new-meals" data-name="Kəsmikli Suşi Krep">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/KesmikliSuşiKrep.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Kəsmikli Suşi Krep</div>
+                                <div class="main-item-ingredient">Krep xəmir, kəsmik, xama, çiyələk, meyvə bəzəyi.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item new-meals" data-name="Qumru">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/Kumru.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Qumru</div>
+                                <div class="main-item-ingredient">Tortilla lavaşı, kartof fri, sosiska, salam, sucuq, vetçina, çedar pendiri, bal-xardal sousu, yaşıl salat, ketçup, mayonez.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item new-meals" data-name="Qoğal Burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/QoğalBurger.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Qoğal Burger</div>
+                                <div class="main-item-ingredient">Qoğal, kotlet, kartof fri, tartar sousu, kahı, pomidor, turşu, yaşıl salat, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                
+                            <!-- Yeniliklər hissəsi bitdi -->
+                            <!-- Səhər yeməyi hissəsi -->
+                            <div class="main-item All-meals Breakfast" data-name="Amerikan Səhər Yeməyi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/Amerikan_shr_yemyi.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Amerikan Səhər Yeməyi</div>
+                                <div class="main-item-ingredient">Oladi, kartof fri, mal vetçinası, sosiska, yumurta, mürəbbə.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="İsti Səhər Yeməyi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/isti_shr_yemyi.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">İsti Səhər Yeməyi</div>
+                                <div class="main-item-ingredient">Pomidor-yumurta, siqar börəyi, hallumi pendiri, çedar pendiri, göbələk, pomidor, acı bibər, kartof dilimləri, sucuq.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Kruasan Sendviç">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/KruasanSendvic.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Kruasan Sendviç</div>
+                                <div class="main-item-ingredient">Kruasan, pesto sousu, mozzarella pendiri, pomidor, yaşıl reyhan.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Soyuq Səhər Yeməyi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/SoyuqShrYemeyi.jpg" alt=""></div>
+                                <div class="main-item-money">23.20 ₼</div>
+                                <div class="main-item-name">Soyuq Səhər Yeməyi</div>
+                                <div class="main-item-ingredient">Yumurtalı çörək, siqar börəyi, oladi, tandır çörəyi, lavaş, əncir mürəbbəsi, çiyələk mürəbbəsi, gilas mürəbbəsi, pomidor, xiyar, nehrə yağı, kərə yağı, duz, bal, qaymaq, ağ pendir, çedar pendiri, keçi pendiri, şokolad pastası, qara və yaşıl zeytun, limitsiz çay.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Sucuq Menemen">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/Sucuqlu_menemen.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Sucuq Menemen</div>
+                                <div class="main-item-ingredient">Yumurta, pomidor, sucuq, yaşıl bibər, kərə yağı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Sini Səhər Yeməyi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/TepsiShrYemeyi.jpg" alt=""></div>
+                                <div class="main-item-money">60 ₼</div>
+                                <div class="main-item-name">Sini Səhər Yeməyi</div>
+                                <div class="main-item-ingredient">Tavada yumurta, sucuq və ya menemen, kaşarlı su böreği, siqar börəyi, yumurtalı çörək, kərə yağı, nehrə yağı, mürəbbə, ağ pendir, çedar pendiri, keçi pendiri, bal, qaymaq, duz, qatılaşdırılmış süd, üzüm, portağal, pomidor, xiyar, kahı, qara və yaşıl zeytun, limitsiz çay.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Səhər yeməyi hissəsi bitdi -->
+                            <!-- Əsas Yeməklər hissəsi başladı  -->
+                            <div class="main-item All-meals Main-dishes" data-name="Xırtıldayan düşbərə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Cz-bz_kft.jpg" alt="Xırtıldayan düşbərə"></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name">Xırtıldayan düşbərə</div>
+                                <div class="main-item-ingredient">Qızardılmış küftə (mal əti, quyruq yağı), pomidor, acı bibər, sotə tərəvəzlər, ketçup. Yan yemək seçimi: kartof qızartması və ya düyü.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Dana Lokumu">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Dana_lokum.jpg" alt="Dana Lokumu"></div>
+                                <div class="main-item-money">25 ₼</div>
+                                <div class="main-item-name">Dana Lokumu</div>
+                                <div class="main-item-ingredient">Qızardılmış dana dilimləri, pomidor, acı bibər, kartof, dəniz duzu, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Pendirli manqal dürməyi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Kaarl_manqal_drm.jpg" alt="Pendirli manqal dürməyi"></div>
+                                <div class="main-item-money">24.10 ₼</div>
+                                <div class="main-item-name">Pendirli manqal dürməyi</div>
+                                <div class="main-item-ingredient">Küftə (mal əti, quyruq yağı), çedar pendiri, rəngli bibərlər, lavaş çörəyi, kartof qızartması, tərəvəzli düyü, Texas sousu, mayonez, göyərti.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Neapolitan souslu fındıq küftə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Neapolitan-Souslu-Fndq-Kft.jpg" alt="Neapolitan souslu fındıq küftə"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Neapolitan souslu fındıq küftə</div>
+                                <div class="main-item-ingredient">Qızardılmış küftə (mal əti, quyruq yağı), kartof, xüsusi çörək, Neapolitan sousu, göyərti, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Pürrəng küftə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/t-kft-haval-rkd.jpg" alt="Pürrəng küftə"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Pürrəng küftə</div>
+                                <div class="main-item-ingredient">Küftə (mal əti, quyruq yağı), lavaş, kahı, pomidor, turşu xiyar, çedar pendiri, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Toyuq fajitas">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/tli_fajitas.jpg" alt="Toyuq fajitas"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Toyuq fajitas</div>
+                                <div class="main-item-ingredient">Qızardılmış toyuq, soya sousu, çili bibəri, rəngli bibərlər, soğan, lavaş, jalapeno bibəri, şirin çili sousu, düyü sousu, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Əsas yeməklər bitdi -->
+                            <!-- isti Yeməklər hissəsi başladı -->
+                            <div class="main-item All-meals Hot-dishes" data-name="Qovrulmuş Toyuq Göbələklə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Gblkli-toyuq-qovurma_1724330348.jpg" alt="Qovrulmuş Toyuq Göbələklə"></div>
+                                <div class="main-item-money">12.60 ₼</div>
+                                <div class="main-item-name">Qovrulmuş Toyuq Göbələklə</div>
+                                <div class="main-item-ingredient"></div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Göbələk Sousunda Toyuq">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_gblk_sousu_il_1724333736.jpg" alt="Göbələk Sousunda Toyuq"></div>
+                                <div class="main-item-money">17.10 ₼</div>
+                                <div class="main-item-name">Göbələk Sousunda Toyuq</div>
+                                <div class="main-item-ingredient">Toyuq filetosu, pomidor, bibər, qovrulmuş tərəvəzlər, düyü plovu, kartof fri, bal-sarımsaq sousu, göbələk sousu, otlar, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Toyuq Kebabı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_izqara_kabab_1724333227.jpg" alt="Toyuq Kebabı"></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Toyuq Kebabı</div>
+                                <div class="main-item-ingredient">Qril edilmiş toyuq, düyü, kartof, badımcan, acı bibər, pomidor, göyərti.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Toyuq Şişləri">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_p_i_1724330186.jpg" alt="Toyuq Şişləri"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Toyuq Şişləri</div>
+                                <div class="main-item-ingredient">Marinad edilmiş toyuq filetosu, bibər, albalı pomidorları, ədviyyatlar. Yan yemək seçimi ilə: kartof fri və ya düyü.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Toyuq Qanadları Düyü Sousu ilə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_qanadlar_ltik_sousu_il.jpg" alt="Toyuq Qanadları Düyü Sousu ilə"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Toyuq Qanadları Düyü Sousu ilə</div>
+                                <div class="main-item-ingredient">Toyuq qanadları, mozzarella pendiri, albalı pomidorları, xüsusi kartof fri, düyü sousu.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Qril Edilmiş Kebab Tərəvəzlərlə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Trvzli_izqara_kabab_1724329966.jpg" alt="Qril Edilmiş Kebab Tərəvəzlərlə"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Qril Edilmiş Kebab Tərəvəzlərlə</div>
+                                <div class="main-item-ingredient">Qril edilmiş toyuq, yaşıl bibər, qırmızı bibər, acı bibər, pomidor, badımcan, Yunan salatı, kartof, bibər, göyərti.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- isti Yeməklər bitdi -->
+                            <!-- burger hissəsi başladı -->
+                            <div class="main-item All-meals Burger" data-name="Lahmacun burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Lahmacun_burger_1724417079.jpg" alt="Lahmacun burger"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Lahmacun burger</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, ət köftəsi (toyuq, qoyun kuyrugu), çedar pendiri sousu, kahı, pomidor, turşu, kartof fri, yaşıl salat, soğan, limon, ketçup, mayonez.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Mini burgerlər">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Mini_burger_1724417454.jpg" alt="Mini burgerlər"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Mini burgerlər</div>
+                                <div class="main-item-ingredient">Kiçik ağ və qara burger çörəkləri, köftə, kahı, pomidor, xiyar, kartof fri, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Pizza burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Pizza_burger_1724417578.jpg" alt="Pizza burger"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Pizza burger</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, mozzarella pendiri, pizza pomidor sousu, çedar pendiri sousu, ət köftəsi, kahı, pomidor, turşu, kartof fri, yaşıl salat, ketçup, mayonez.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Quesadilla burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Quesadilla-burger_1724418479.jpg" alt="Quesadilla burger"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Quesadilla burger</div>
+                                <div class="main-item-ingredient">Xüsusi hazırlanmış lavash, qril edilmiş ət köftəsi, çedar pendiri, pomidor, turşu, iceberg kahı, kartof fri, tartar sousu, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Çizburger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/ZBURGER2_1724414979.jpg" alt="Çizburger"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Çizburger</div>
+                                <div class="main-item-ingredient">Burger çörəyi, qril edilmiş ət köftəsi, kartof fri, kahı, pomidor, turşu, çedar pendiri, xüsusi sous, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Zinger burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Zinger-burger_1724417749.jpg" alt="Zinger burger"></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Zinger burger</div>
+                                <div class="main-item-ingredient">Burger çörəyi, toyuq filetosu, kahı, kartof fri, tartar sousu, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- burger hissəsi bitdi -->
+
+                            <!-- pizza hissəsi başladı -->
+                            <div class="main-item All-meals Pizza" data-name="BBQ souslu pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/BBQ_souslu_pizza_1724314144.jpg" alt="BBQ souslu pizza"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name" alt="BBQ souslu pizza">BBQ souslu pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, mozzarella pendiri, pizza pomidor sousu, pizza krem sousu, BBQ sousu, toyuq filetosu, zeytun, jalapeno bibərləri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Marqarita pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Marqarita_pizza_1724311765.jpg" alt="Marqarita pizza"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name" alt="Marqarita pizza">Marqarita pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, mozzarella pendiri, pizza pomidor sousu, pizza krem sousu, albalı pomidoru, yaşıl reyhan.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Neapolitan pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Neapolitan_pizza_1724310961.jpg" alt="Neapolitan pizza"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name" alt="Neapolitan pizza">Neapolitan pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, mozzarella pendiri, Neapolitan sousu, pizza krem sousu, albalı pomidoru, yaşıl reyhan.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Polo pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Polo_pizza_1724312249.jpg" alt="Polo pizza"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name" alt="Polo pizza">Polo pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, toyuq filetosu, mozzarella pendiri, pomidor, bibər, qarğıdalı, xüsusi pizza sousu, pizza krem sousu.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Qarışıq pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Qarq_pizza_1724313780.jpg" alt="Qarışıq pizza"></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name" alt="Qarışıq pizza">Qarışıq pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, salami, kolbasa, qarğıdalı, göbələk, mozzarella pendiri, qara zeytun, xüsusi pizza sousu, pizza krem sousu.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Salami pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Salami_pizza_1724311973.jpg" alt="Salami pizza"></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name" alt="Salami pizza">Salami pizza</div>
+                                <div class="main-item-ingredient">Xüsusi xəmir, mozzarella pendiri, pizza pomidor sousu, pizza krem sousu, salami.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- pizza hissəsi bitdi -->
+
+                            <!-- sendviç hissəsi başladı -->
+                            <div class="main-item All-meals Sandwich" data-name="Klub sendviçi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Klub_sendvi_1724244941.jpg" alt="Klub sendviçi"></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name" alt="Klub sendviçi">Klub sendviçi</div>
+                                <div class="main-item-ingredient">Tost çörəyi, toyuq filetosu, kahı, dana jambonu, cheddar pendiri, pomidor, xiyar, turşu, yumurta (istəyə görə).</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Klub sendviç seti">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Klub_sendvi_set_1724245041.jpg" alt="Klub sendviç seti"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name" alt="Klub sendviç seti">Klub sendviç seti</div>
+                                <div class="main-item-ingredient">Tost çörəyi, toyuq filetosu, kahı, dana jambonu, cheddar pendiri, pomidor, xiyar, turşu, yumurta (istəyə görə), fransız kartofu, yaşıl salat, mayonez, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Qarışıq tost">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Qarq_tost_1724245470.jpg" alt="Qarışıq tost"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name" alt="Qarışıq tost">Qarışıq tost</div>
+                                <div class="main-item-ingredient">Tost çörəyi, salami, cheddar pendiri, kolbasa, dana jambonu, kərə yağı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Toyuq sendviçi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Toyuq_sendvi_1724245156.jpg" alt="Toyuq sendviçi"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name" alt="Toyuq sendviçi">Toyuq sendviçi</div>
+                                <div class="main-item-ingredient">Tost çörəyi, toyuq filetosu, kahı, pomidor, turşu xiyar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Zinger burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Toyuq_sendvi_set_1724245247.jpg" alt="Zinger burger"></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name" alt="Zinger burger">Zinger burger</div>
+                                <div class="main-item-ingredient">Burger çörəyi, toyuq filetosu, kahı, fransız kartofu, tartar sousu, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Tuna sendviçi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Tuna_sendvi_1724245372.jpg" alt="Tuna sendviçi"></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name" alt="Tuna sendviçi">Tuna sendviçi</div>
+                                <div class="main-item-ingredient">Kaliforniya çörəyi, tuna, cheddar pendiri, mayonez, xiyar, pomidor, kahı, göyərti.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- sendviç hissəsi bitdi -->
+
+                            <!-- kabab hissəsi başladı -->
+                            <div class="main-item All-meals Kebabs" data-name="Adana kababı (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Adana_kabab_acl.jpg" alt="Adana kababı (acılı)"></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name" alt="Adana kababı (acılı)">Adana kababı (acılı)</div>
+                                <div class="main-item-ingredient">Qoç əti, qoç quyruğu, badımcan püresi, şiş salatı, xüsusi xəmirlər, pomidor, bibər, bibər pastası, sarımsaq, soğan, qırmızı soğan, otlar, balqabaq bibəri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Lula kababı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/lule_kabab.jpg" alt="Lula kababı"></div>
+                                <div class="main-item-money">17.10 ₼</div>
+                                <div class="main-item-name" alt="Lula kababı">Lula kababı</div>
+                                <div class="main-item-ingredient"></div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Qozu şiş kababı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Quzu_i_kabab.jpg" alt="Qozu şiş kababı"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name" alt="Qozu şiş kababı">Qozu şiş kababı</div>
+                                <div class="main-item-ingredient">Qozu budu, şiş salatı, toyuq əti, lavaş çörəyi, pomidor, balqabaq bibəri, qırmızı bibər, paprika, qara istiot, sarımsaq, soğan, otlar, sumak.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Qozu biftek kababı (qarnı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Quzu_tik_kabab_bel.jpg" alt="Qozu biftek kababı (qarnı)"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name" alt="Qozu biftek kababı (qarnı)">Qozu biftek kababı (qarnı)</div>
+                                <div class="main-item-ingredient">Qozu bel hissəsi, pomidor, şiş salatı, toyuq əti, isti bibər, lavaş çörəyi, qırmızı soğan, otlar, sumak.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Toyuq şiş kababı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Toyuq_i_kabab_.jpg" alt="Toyuq şiş kababı"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name" alt="Toyuq şiş kababı">Toyuq şiş kababı</div>
+                                <div class="main-item-ingredient">Toyuq, soğan, pomidor, göyərti, isti bibər, lavaş.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Toyuq kababı (bud)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Toyuq_kabab_buddibi.jpg" alt="Toyuq kababı (bud)"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name" alt="Toyuq kababı (bud)">Toyuq kababı (bud)</div>
+                                <div class="main-item-ingredient">Toyuq budu, pomidor, şiş salatı, toyuq əti, isti bibər, lavaş çörəyi, qırmızı və balqabaq bibəri, sarımsaq, soğan, otlar, sumak, qara istiot.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- kabab hissəsi bitdi -->
+
+
+                            <!-- salat hissəsi başladı -->
+                            <div class="main-item  All-meals Salad" data-name="Gavurdağı salatı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Gavurda_salat_1724410761.jpg" alt="Gavurdağı salatı"></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name" alt="Gavurdağı salatı">Gavurdağı salatı</div>
+                                <div class="main-item-ingredient">Xiyar, kahı, pomidor, qoz, limon, zeytun yağı, otlar, narşərab.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Haydari">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Haydari_1724413859.jpg" alt="Haydari"></div>
+                                <div class="main-item-money">3.80 ₼</div>
+                                <div class="main-item-name" alt="Haydari">Haydari</div>
+                                <div class="main-item-ingredient">Yoğurt, sarımsaq, zeytun yağı, qurudulmuş nanə.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Çoban salatı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/oban_salat_1724411569.jpg" alt="Çoban salatı"></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name" alt="Çoban salatı">Çoban salatı</div>
+                                <div class="main-item-ingredient">Xiyar, pomidor, soğan, otlar, yaşıl bibər, limon, zeytun yağı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Sezar salatı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Sezar_salat_1724410929.jpg" alt="Sezar salatı"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name" alt="Sezar salatı">Sezar salatı</div>
+                                <div class="main-item-ingredient">Qril toyuğu, pomidor, parmesan pendiri, iceberg kahı, ədviyyatlı çörək qırıntıları, Sezar sousu.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Sezar salatı karides ilə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Sezar_salat_krevet_il_1724409730.jpg" alt="Sezar salatı karides ilə"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name" alt="Sezar salatı karides ilə">Sezar salatı karides ilə</div>
+                                <div class="main-item-ingredient">Qril karidesi, iceberg kahı, albalı pomidorları, ədviyyatlı çörək qırıntıları, Sezar sousu, parmesan pendiri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Biftek salatı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Steyk_salat_1724409873.jpg" alt="Biftek salatı"></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name" alt="Biftek salatı">Biftek salatı</div>
+                                <div class="main-item-ingredient">Mal əti, qırmızı paxla, yumurta, rəngli bibərlər, iceberg kahı, albalı pomidorları, balsamik sous.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- salat hissəsi bitdi -->
+
+                            <!-- Pasta hissəsi başladı -->
+                            <div class="main-item All-meals Pasta" data-name="Fettuccine Alfredo">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Fettuccine-Alfredo_1724239783.jpg" alt="Fettuccine Alfredo"></div>
+                                <div class="main-item-money">19.10 ₼</div>
+                                <div class="main-item-name" alt="Fettuccine Alfredo">Fettuccine Alfredo</div>
+                                <div class="main-item-ingredient">Fettuccine makaronu, yaşıl reyhan, toyuq filesi, parmesan pendiri, göbələk, sarımsaq, soğan.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Manti">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Mant_1724240206.jpg" alt="Manti"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name" alt="Manti">Manti</div>
+                                <div class="main-item-ingredient">Manti xəmiri, dana əti, soğan, düyü sousu, nanə, sumaq, yoğurt. (Mövsümi).</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Bişmiş makaron">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Noodle_1724240307.jpg" alt="Noodles"></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name" alt="Noodles">Bişmiş makaron</div>
+                                <div class="main-item-ingredient">Makaron, toyuq filesi, soğan, yaşıl soğan, rəngli bibər, yerkökü, soya sousu, susam.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Penne arrabbiata">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Penne-arrabbiata_1724240119.jpg" alt="Penne arrabbiata"></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name" alt="Penne arrabbiata">Penne arrabbiata</div>
+                                <div class="main-item-ingredient">Arrabbiata sousu, makaron, zeytun yağı, sarımsaq, parmesan pendiri, yaşıl reyhan.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Penne Da Vinci">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Penne-Da-Vinci_1724240013.jpg" alt="Penne Da Vinci"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name" alt="Penne Da Vinci">Penne Da Vinci</div>
+                                <div class="main-item-ingredient">Makaron, toyuq filesi, parmesan pendiri, krema, otlar, göbələk, rəngli bibərlər, pesto sousu.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Spaghetti Bolognese">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Spaghetti-bolognese_1724239912.jpg" alt="Spaghetti Bolognese"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name" alt="Spaghetti Bolognese">Spaghetti Bolognese</div>
+                                <div class="main-item-ingredient">Spagetti, rəndələnmiş parmesan pendiri, bolognese sousu (dana əti), göyərti.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- pasta hissəsi bitdi -->
+
+                            <!-- Pilaf hissəsi başladı -->
+                            <div class="main-item All-meals Pilaf" data-name="Düyü">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Dy_1724483926.jpg" alt="Düyü"></div>
+                                <div class="main-item-money">2.90 ₼</div>
+                                <div class="main-item-name" alt="Rice">Düyü</div>
+                                <div class="main-item-ingredient"></div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pilaf" data-name="Fisinjan pilavı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Fisincan-plov_1724237727.jpg" alt="Fisinjan pilaf"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name" alt="Fisinjan pilaf">Fisinjan pilavı</div>
+                                <div class="main-item-ingredient">Köftələr (dana, qoyun quyruğu), qoz, narşərab, soğan, düyü pilavı, qazmaq.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pilaf" data-name="Qara lobyalı pilav">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Lobya-plov-aqara-il_1724237499.jpg" alt="Bean pilaf with black beans"></div>
+                                <div class="main-item-money">16.10 ₼</div>
+                                <div class="main-item-name" alt="Bean pilaf with black beans">Qara lobyalı pilav</div>
+                                <div class="main-item-ingredient">Qoyun əti, düyü pilavı, soğan, kişmiş, qurudulmuş albalı, qurudulmuş ərik, kestane, lobya, qazma.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pilaf" data-name="Tərəvəzli pilav">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Sbzi-plov_1724237619.jpg" alt="Vegetable pilaf"></div>
+                                <div class="main-item-money">19 ₼</div>
+                                <div class="main-item-name" alt="Vegetable pilaf">Tərəvəzli pilav</div>
+                                <div class="main-item-ingredient">Qoyun əti, düyü pilavı, göyərti, soğan, qurudulmuş albalı, qazma, nar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pilaf" data-name="Cəfərili pilav">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/ydl-plov_1724237383.jpg" alt="Dill pilaf"></div>
+                                <div class="main-item-money">16.10 ₼</div>
+                                <div class="main-item-name" alt="Dill pilaf">Cəfərili pilav</div>
+                                <div class="main-item-ingredient">Qoyun əti, düyü pilavı, qazmaq, soğan, qurudulmuş albalı, nar, göyərti.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Pilaf hissəsi bitdi -->
+
+                            <!-- Taco hissəsi başladı -->
+                            <div class="main-item All-meals Taco" data-name="Dana ətli taco (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_dana_ti_il_acl_1724230407.jpg" alt="Beef taco (spicy)"></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name" alt="Taco with beef (spicy)">Dana ətli taco (acılı)</div>
+                                <div class="main-item-ingredient">Dana əti, taco lavaşı, bibər, balqabaq bibəri, qırmızı soğan, kahı, şirin çili sousu, pomidor, göyərti, acı bibər.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Taco" data-name="Taco karideslə (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_krevet_il_acl_1724230721.jpg" alt="Taco with shrimp (spicy)"></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name" alt="Taco with shrimp (spicy)">Taco karideslə (acılı)</div>
+                                <div class="main-item-ingredient">Panko ilə örtülmüş karides, taco pita çörəyi, kahı, pomidor, qırmızı soğan, acı bibər, xüsusi sous.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Taco" data-name="Taco Krispi (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_krispi_acl_1724230598.jpg" alt="Taco Crispy (spicy)"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name" alt="Taco Crispy (spicy)">Taco Krispi (acılı)</div>
+                                <div class="main-item-ingredient">Taco lavaşı, köftə, çedar pendiri, kahı, pomidor, qırmızı soğan, acı bibər, xüsusi sous.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Taco" data-name="Taco toyuqla (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_toyuq_ti_il_acl_1724230281.jpg" alt="Taco with chicken (spicy)"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name" alt="Taco with chicken (spicy)">Taco toyuqla (acılı)</div>
+                                <div class="main-item-ingredient">Toyuq filesi, taco lavaşı, bibər, balqabaq bibəri, qırmızı soğan, kahı, şirin çili sousu, pomidor, göyərti, acı bibər.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Taco hissəsi bitdi -->
+
+
+                            <!-- Roll hissəsi başladı -->
+                            <div class="main-item All-meals Roll" data-name="Adana rulonu (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/Adana_drm_1724323042.jpg" alt="Adana rulonu (acılı)"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Adana rulonu (acılı)</div>
+                                <div class="main-item-ingredient">Adana köftəsi (dana əti, qoç quyruğu), kartof qızartması, lavaş, pomidor, qırmızı soğan, göyərti, acı bibər, sumak, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Roll" data-name="Krep rulonu">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/Krep_Drm_1724322310.jpg" alt="Krep rulonu"></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Krep rulonu</div>
+                                <div class="main-item-ingredient">Krep xəmir, toyuq filesi, sarımsaq sousu, turşu, kartof qızartması, yaşıl salat, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Roll" data-name="Caesar rulonu ət ilə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/sezar_roll_tli_1724323941.jpg" alt="Caesar rulonu ət ilə"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Caesar rulonu ət ilə</div>
+                                <div class="main-item-ingredient">Dana əti, kartof qızartması, iceberg kahı, albalı pomidorları, parmesan pendiri, Sezar sousu, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Roll" data-name="Ət rulonu">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/tli_drm_1724323677.jpg" alt="Ət rulonu"></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name">Ət rulonu</div>
+                                <div class="main-item-ingredient">Xüsusi marinad edilmiş dana əti, kənd üslubunda kartof, lavaş, bibər, kaşar pendiri, yaşıl salat, balqabaq bibəri, xüsusi sous, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Roll" data-name="Toyuq şiş kababı (acılı)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/Toyuq_i_drm_1724323157.jpg" alt="Toyuq şiş kababı (acılı)"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Toyuq şiş kababı (acılı)</div>
+                                <div class="main-item-ingredient">Qril edilmiş toyuq, kartof qızartması, lavaş, pomidor, qırmızı soğan, sarımsaq, göyərti, balqabaq bibəri, bibər, sumak, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Roll" data-name="Qril edilmiş köftə ilə şiş kababı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/zqara_kft_i_drm_1724323317.jpg" alt="Qril edilmiş köftə ilə şiş kababı"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Qril edilmiş köftə ilə şiş kababı</div>
+                                <div class="main-item-ingredient">Köftə (dana əti, qoç quyruğu), kartof qızartması, lavaş, pomidor, qırmızı soğan, göyərti, balqabaq bibəri, rəngli bibər, sumak, mayonez, ketçup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Roll hissəsi bitdi -->
+
+                            <!-- Sous hissəsi başlayır -->
+                            <div class="main-item All-meals Sauce" data-name="Balzamik">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Balzamik_sousu_1724327029.jpg" alt="Balzamik sousu"></div>
+                                <div class="main-item-money">1.90 ₼</div>
+                                <div class="main-item-name">Balzamik</div>
+                                <div class="main-item-ingredient">Şirin ağ üzümlər, əsasən Lambrusco və ya Trebbiano növləri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sauce" data-name="Çedar pendiri">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/eddar_pendiri_sousu_1724326092.jpg" alt="Çedar pendiri sousu"></div>
+                                <div class="main-item-money">1.90 ₼</div>
+                                <div class="main-item-name">Çedar pendiri</div>
+                                <div class="main-item-ingredient">Rəndələnmiş çedar pendiri (yüngül və ya kəskin), süd (və ya yüngül qaymaq), təzə çəkilmiş qara istiot (və ya ağ istiot).</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sauce" data-name="Ketçup">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Ketup_1724327240.jpg" alt="Ketçup"></div>
+                                <div class="main-item-money">0.90 ₼</div>
+                                <div class="main-item-name">Ketçup</div>
+                                <div class="main-item-ingredient">Ədviyyatlar, şəkər, sirkə, pomidor.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sauce" data-name="Mayonez">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Mayonez_1724327080.jpg" alt="Mayonez"></div>
+                                <div class="main-item-money">0.90 ₼</div>
+                                <div class="main-item-name">Mayonez</div>
+                                <div class="main-item-ingredient">Mayonez yağ, yumurta sarısı və turşu (sirkə və ya limon suyu) qarışığıdır.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sauce" data-name="Sarımsaq sousu">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Sarmsaq_sousu_1724326966.jpg" alt="Sarımsaq sousu"></div>
+                                <div class="main-item-money">1.90 ₼</div>
+                                <div class="main-item-name">Sarımsaq sousu</div>
+                                <div class="main-item-ingredient">Doğranmış sarımsaq, limon suyu, yağ, kərə yağı, cəfəri, duz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sauce" data-name="Tabasko">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Tabasko_sousu_1724325995.jpg" alt="Tabasko sousu"></div>
+                                <div class="main-item-money">5 ₼</div>
+                                <div class="main-item-name">Tabasko</div>
+                                <div class="main-item-ingredient">Qocalmış qırmızı bibər, duz və distillə edilmiş sirkə.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Sous hissəsi bitir -->
+
+
+                            <!-- Şorba hissəsi başlayır -->
+                            <div class="main-item All-meals Soup" data-name="Brokoli şorbası">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Brokoli_orbas_1724325383.jpg" alt="Brokoli şorbası"></div>
+                                <div class="main-item-money">6 ₼</div>
+                                <div class="main-item-name">Brokoli şorbası</div>
+                                <div class="main-item-ingredient">Brokoli, qaymaq, soğan, qızardılmış çörək qırıntıları, istiot, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Soup" data-name="Düşbərə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/dbr_1724324718.jpg" alt="Düşbərə"></div>
+                                <div class="main-item-money">6.50 ₼</div>
+                                <div class="main-item-name">Düşbərə</div>
+                                <div class="main-item-ingredient">Adi xəmir, qoyun əti, soğan, quru nanə, sirkə. (mövsümi)</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Soup" data-name="Mərcimək şorbası">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Mrcimk_orbas_1724324937.jpg" alt="Mərcimək şorbası"></div>
+                                <div class="main-item-money">6.10 ₼</div>
+                                <div class="main-item-name">Mərcimək şorbası</div>
+                                <div class="main-item-ingredient">Qırmızı mərcimək, xüsusi sous, limon, qızardılmış çörək qırıntıları (krutonlar), bibər, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Soup" data-name="Pomidor şorbası">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Pomidor_orbas_1724325259.jpg" alt="Pomidor şorbası"></div>
+                                <div class="main-item-money">6.60 ₼</div>
+                                <div class="main-item-name">Pomidor şorbası</div>
+                                <div class="main-item-ingredient">Soyulmuş pomidor, yerkökü, çedar pendiri, pomidor, qaymaq, qızardılmış çörək qırıntıları (krutonlar), kərə yağı, istiot, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Soup" data-name="Qaymaqlı göbələk şorbası">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Qaymaql_gblk_orbas_1724325106.png" alt="Qaymaqlı göbələk şorbası"></div>
+                                <div class="main-item-money">6.10 ₼</div>
+                                <div class="main-item-name">Qaymaqlı göbələk şorbası</div>
+                                <div class="main-item-ingredient">Göbələklər, kartof, qaymaq, soğan, qızardılmış çörək qırıntıları (krutonlar), istiot, ədviyyatlar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- Şorba hissəsi bitir -->
+
+                            <!-- sweets hissesi baslayir -->
+                             <!-- cake -->
+                            <div class="main-item All-sweets Cake" data-name="Karamel tortu">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cake/Mhsullar43_1723447700.jpg" alt="Karamel tortu"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Karamel tortu</div>
+                                <div class="main-item-ingredient">Kakao peçenesi, qızardılmış şəkər, şokolad kremi, fındıq, karamel sousu</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cake" data-name="Şokoladlı tort profiterol ilə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cake/Mhsullar44_1723447304.jpg" alt="Şokoladlı tort profiterol ilə"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Şokoladlı tort profiterol ilə</div>
+                                <div class="main-item-ingredient">Kakao peçenesi, çırpılmış krem, şokolad parçaları, profiterol</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cake" data-name="Bal tortu">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cake/Mhsullar55_1723448323.jpg" alt="Bal tortu"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Bal tortu</div>
+                                <div class="main-item-ingredient">Bal peçenesi, turşu krem, yağlı krem, bişmiş və sıxlaşdırılmış süd.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- cake -->
+                            <!-- chesecake -->
+                            <div class="main-item All-sweets Cheesecake" data-name="Limonlu çizkeyk">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cheesecake/Mhsullar33_1723270862.jpg" alt="Limonlu çizkeyk"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Limonlu çizkeyk</div>
+                                <div class="main-item-ingredient">Krem pendiri, yumurta, pudra şəkəri, krem, jelatin, biskvit peçenesi, limon kürü.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cheesecake" data-name="Meyvəli çizkeyk">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cheesecake/Mhsullar36_1723271072.jpg" alt="Meyvəli çizkeyk"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Meyvəli çizkeyk</div>
+                                <div class="main-item-ingredient">Krem pendiri, yumurta, pudra şəkəri, krem, jelatin, biskvit peçenesi, qarağat jeli, çiyələk mürəbbəsi, böyürtkən mürəbbəsi.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cheesecake" data-name="Qarağatlı çizkeyk">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cheesecake/Mhsullar35_1723271312.jpg" alt="Qarağatlı çizkeyk"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Qarağatlı çizkeyk</div>
+                                <div class="main-item-ingredient">Krem pendiri, yumurta, pudra şəkəri, krem, jelatin, biskvit peçenesi, qarağat mürəbbəsi.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- chesecake -->
+                             <!-- waffle -->
+                            <div class="main-item All-sweets Waffle" data-name="Twist vafli">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/waffle/Bkm_vafl_bananl_iylkli_1723288253.jpg" alt="Twist vafli"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Twist vafli</div>
+                                <div class="main-item-ingredient">Vafli xəmiri, süd şokoladı, çiyələk, banan, pudra şəkəri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Waffle" data-name="Konfetli vafli">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/waffle/Candy_vafl_1723287992.jpg" alt="Konfetli vafli"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Konfetli vafli</div>
+                                <div class="main-item-ingredient">Vafli, souslu qorniet, merinq, çırpılmış krem, şekerli qarpız, pambıq şəkər, süd şokoladı, rəngli konfetlər.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Waffle" data-name="Fıstıqlı vafli">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/waffle/Mhsullar70_1723287800.jpg" alt="Fıstıqlı vafli"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Fıstıqlı vafli</div>
+                                <div class="main-item-ingredient">Sadə vafli, banan, süd şokoladı, ağ şokolad, fıstıq yağı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- waffle -->
+                            <!-- crepe -->
+                            <div class="main-item All-sweets Crepe" data-name="Meyvəli fettuccine krep">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/crepe/Fettuccine_krep_meyvli_1673435314.jpg" alt="Meyvəli fettuccine krep"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Meyvəli fettuccine krep</div>
+                                <div class="main-item-ingredient">Krep xəmirı, banan, çiyələk, sadə dondurma, süd şokoladı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Crepe" data-name="Xüsusi krep">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/crepe/Special_krep_1723275811.jpg" alt="Xüsusi krep"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Xüsusi krep</div>
+                                <div class="main-item-ingredient">Krep xəmiri, banan, eksler, çırpılmış krem, qovrulmuş fındıq, süd şokoladı, şokolad pralinləri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Crepe" data-name="Çiyələkli sushi krep">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/crepe/Zrif_sui_krep_izkeyk_kremli_1673445752.jpg" alt="Çiyələkli sushi krep"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Çiyələkli sushi krep</div>
+                                <div class="main-item-ingredient">Krep xəmiri, kremli çizkeyk, çiyələk, süd şokoladı, pudra şəkəri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- crepe -->
+                            <!-- milk dessert -->
+                            <div class="main-item All-sweets Milk-sweets" data-name="Sobalı düyü pudinqi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/milkDessert/frn_stla_1723459500.jpg" alt="Sobalı düyü pudinqi"></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name">Sobalı düyü pudinqi</div>
+                                <div class="main-item-ingredient">Süd, düyü, pudra şəkəri</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Milk-sweets" data-name="Düyü pudinqi Rulet">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/milkDessert/Mhsullar17_1723459164.jpg" alt="Düyü pudinqi Rulet"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Düyü pudinqi Rulet</div>
+                                <div class="main-item-ingredient">Rulet düyü pudinqi, dondurma, tahin karamel sousu, merinq bəzəyi, mövsümi meyvələr, biskvit qırıntıları. Çayla birlikdə verilir.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Milk-sweets" data-name="Kazandibi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/milkDessert/qazandibi_1723458233.jpg" alt="Kazandibi"></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Kazandibi</div>
+                                <div class="main-item-ingredient">Süd, düyü, pudra şəkəri</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- milk dessert -->
+                            <!-- icecream-dessert -->
+                            <div class="main-item All-sweets Ice-cream-desserts" data-name="Dondurma boom">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/iceCreamDessert/Mhsullar11_1723467436.jpg" alt="Dondurma boom"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Dondurma boom</div>
+                                <div class="main-item-ingredient">Fantaziya, çiyələk və banan dondurması, qorniet, qovrulmuş fındıq, şokolad parçaları, şokolad sousu, krem.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Ice-cream-desserts" data-name="Brownie və dondurma">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/iceCreamDessert/Mhsullar14_1723467299.jpg" alt="Brownie və dondurma"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Brownie və dondurma</div>
+                                <div class="main-item-ingredient">Brownie, kremli çizkeyk, sadə dondurma, fıstıq yağı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Ice-cream-desserts" data-name="Banana split">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/iceCreamDessert/Mhsullar8_1723469984.jpg" alt="Banana split"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Banana split</div>
+                                <div class="main-item-ingredient">Karamel, şokolad və banan dondurmaları, banan, qorniet parçaları, qovrulmuş fındıq, şokolad pralinləri, krem.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- icecream-dessert -->
+                            <!-- pancake -->
+                            <div class="main-item All-sweets Pancake" data-name="Bananlı pankek">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/pancake/Pankek_bananl_1671700731.jpg" alt="Bananlı pankek"></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Bananlı pankek</div>
+                                <div class="main-item-ingredient">Pankek, banan, mürəbbə, sıxlaşdırılmış süd, süd şokoladı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Pancake" data-name="Süd şokoladlı pankek">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/pancake/Pankek_sdl_okoladl_1723290313.jpg" alt="Süd şokoladlı pankek"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Süd şokoladlı pankek</div>
+                                <div class="main-item-ingredient">Pankek, çiyələk, pudra şəkəri, süd şokoladı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Pancake" data-name="Şirin plitə">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/pancake/Sweet_plate_2_1723289913.jpg" alt="Şirin plitə"></div>
+                                <div class="main-item-money">19 ₼</div>
+                                <div class="main-item-name">Şirin plitə</div>
+                                <div class="main-item-ingredient">Pankek, vafli, fındıq biskottiləri, çırpılmış krem, sıxlaşdırılmış süd, mürəbbə, banan, çiyələk, süd şokoladı, pudra şəkəri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">$-a çevir</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- pancake -->
+                            <!-- sweets hissesi bitdi -->
+
+                            <!-- bakery hissesi basladi -->
+                            <!-- kruassan -->
+                            <div class="main-item All-bakery Croissant" data-name="Bananlı kruassan">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/croisant/Bananl_kruasan_1723210714.jpg" alt="Bananlı kruassan"></div>
+                                <div class="main-item-money">7.60 ₼</div>
+                                <div class="main-item-name">Bananlı kruassan</div>
+                                <div class="main-item-ingredient">Yapışqan xəmir, banan, şokolad kremi. Kappuçino və ya çay ilə xidmət olunur.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Croissant" data-name="Fıstıqlı kruassan rulon">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/croisant/Fstql_kruasan_roll_1720592947.jpg" alt="Fıstıqlı kruassan rulon"></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Fıstıqlı kruassan rulon</div>
+                                <div class="main-item-ingredient">Yapışqan xəmir. Bəzəklər: tünd şokolad, fıstıq yağı.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Croissant" data-name="Kremli çiyələkli kruassan">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/croisant/Kremli_iylkli_kruasan_1723210219.jpg" alt="Kremli çiyələkli kruassan"></div>
+                                <div class="main-item-money">8.10 ₼</div>
+                                <div class="main-item-name">Kremli çiyələkli kruassan</div>
+                                <div class="main-item-ingredient">Yapışqan xəmir, çiyələk, şokolad, çırpılmış qaymaq. Kappuçino və ya çay ilə xidmət olunur.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- kruassan -->
+                            <!-- şorqoğal -->
+                            <div class="main-item All-bakery Shorgogal" data-name="Qoğallar">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/shorgogal/qoallar_1723622159.jpg" alt="Qoğallar"></div>
+                                <div class="main-item-money">3.60 ₼</div>
+                                <div class="main-item-name">Qoğallar</div>
+                                <div class="main-item-ingredient">Yapışqan kərə yağı xəmiri, ədviyyatlar</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- şorqoğal -->
+                            <!-- simit -->
+                            <div class="main-item All-bakery Begels" data-name="Simit">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/bagels/simit_1723641393.jpg" alt="Simit"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Simit</div>
+                                <div class="main-item-ingredient">Qısa xəmirdən hazırlanmış, süd, susam.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Begels" data-name="Zeytunlu və çedar pendirli simit">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/bagels/Zeytunlu_kaarl_simit_1723641220.jpg" alt="Zeytunlu və çedar pendirli simit"></div>
+                                <div class="main-item-money">5.60 ₼</div>
+                                <div class="main-item-name">Zeytunlu və çedar pendirli simit</div>
+                                <div class="main-item-ingredient">Süd xəmiri, zeytun, çedar pendiri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- simit -->
+                            <!-- açma -->
+                            <div class="main-item All-bakery Achma All-bakery Pogacha" data-name="Pendirli açma">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/achma/Pendirli_ama_1723641523.jpg" alt="Pendirli açma"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Pendirli açma</div>
+                                <div class="main-item-ingredient">Kərə yağı xəmir, ağ pendir</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Achma All-bakery Pogacha" data-name="Sadə açma">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/achma/Sad_ama_1723641620.jpg" alt="Sadə açma"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Sadə açma</div>
+                                <div class="main-item-ingredient">Kərə yağı xəmir, çedar pendiri</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Achma All-bakery Pogacha" data-name="Zeytunlu açma">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/achma/Zeytunlu_ama_1723641760.jpg" alt="Zeytunlu açma"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Zeytunlu açma</div>
+                                <div class="main-item-ingredient">Yağlı xəmir, zeytun pastası</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollar'a çevirmək</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <!-- açma -->
+                            <!-- pogacha -->
+                            <div class="main-item All-bakery Pogacha" data-name="Kartoflu rulon">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/pogacha/Kartoflu_poaa_1723642000.jpg" alt="Kartoflu rulon"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Kartoflu rulon</div>
+                                <div class="main-item-ingredient">Yağlı süd xəmiri, kartof.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Pogacha" data-name="Pendirli poğaça">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/pogacha/Pendirli_poaa_1723642809.jpg" alt="Pendirli poğaça"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Pendirli poğaça</div>
+                                <div class="main-item-ingredient">Yağlı süd xəmiri, ağ pendir</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Pogacha" data-name="Qıyma poğaçası">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/pogacha/Qiymli_poaa_1723642927.jpg" alt="Qıyma poğaçası"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Qıyma poğaçası</div>
+                                <div class="main-item-ingredient">Yağlı süd xəmiri, qovrulmuş qıyma</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- pogacha -->
+                            <!-- bakery hissəsi bitdi -->
+                            <!-- drinks hissəsi başladı -->
+                            <!-- çay -->
+                            <div class="main-item All-drinks Tea" data-name="Sahlab çiçəyi çayı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/tea/Mhsullar-21_1723701507.jpg" alt="Sahlab çiçəyi çayı"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Sahlab çiçəyi çayı</div>
+                                <div class="main-item-ingredient">Sahlab çiçəyi, su.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Tea" data-name="Earl Grey çayı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/tea/Mhsullar-3_1723701978.jpg" alt="Earl Grey çayı"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Earl Grey çayı</div>
+                                <div class="main-item-ingredient">Bergamotlu qara çay, su</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Tea" data-name="Alma darçınlı Linden çayı">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/tea/Mhsullar_1723700976.jpg" alt="Alma darçınlı Linden çayı"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Alma darçınlı Linden çayı</div>
+                                <div class="main-item-ingredient">Linden, qurudulmuş alma, darçın çubuğu, su</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- çay -->
+                            <!-- qəhvə -->
+                            <div class="main-item All-drinks Coffee" data-name="Amerikano">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/coffee/amerikano_1723708980.jpg" alt="Amerikano"></div>
+                                <div class="main-item-money">5 ₼</div>
+                                <div class="main-item-name">Amerikano</div>
+                                <div class="main-item-ingredient">Qəhvə, süd, su, fındıqlı biscotti peçenyeləri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Coffee" data-name="Espresso">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/coffee/Mhsullar-23_1723708106.jpg" alt="Espresso"></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Espresso</div>
+                                <div class="main-item-ingredient">Qəhvə, su, fındıqlı biscotti peçenyeləri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Coffee" data-name="Kapuçino">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/coffee/Mhsullar-28_1723709569.jpg" alt="Kapuçino"></div>
+                                <div class="main-item-money">6 ₼</div>
+                                <div class="main-item-name">Kapuçino</div>
+                                <div class="main-item-ingredient">Qəhvə, süd kremi, fındıqlı biscotti peçenyeləri.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- qəhvə -->
+                            <!-- frozen drinks -->
+                            <div class="main-item All-drinks Frozen-drinks" data-name="Bananlı milkshake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/Frozen-drinks/Bananl_milkeyk_1729162283.jpg" alt="Bananlı milkshake"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Bananlı milkshake</div>
+                                <div class="main-item-ingredient">Banan dondurması, şərbət, süd, krem, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Frozen-drinks" data-name="Çiyələkli milkshake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/Frozen-drinks/iylkli_milkeyk_1729162199.jpg" alt="Çiyələkli milkshake"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Çiyələkli milkshake</div>
+                                <div class="main-item-ingredient">Çiyələk dondurması, şərbət, süd, krem, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Frozen-drinks" data-name="Oreo milkshake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/Frozen-drinks/Oreolu_milkeyk_1729162110.jpg" alt="Oreo milkshake"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Oreo milkshake</div>
+                                <div class="main-item-ingredient">Fantasy dondurması, şərbət, Oreo, süd, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- frozen drinks -->
+                            <!-- lemonade -->
+                            <div class="main-item All-drinks Lemonade" data-name="Buzlu çay mango">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/lemonade/ce_tea_mango_1724050759.jpg" alt="Buzlu çay mango"></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Buzlu çay mango</div>
+                                <div class="main-item-ingredient">Çay, su, limon, şərbət, nanə, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Lemonade" data-name="Passion meyvəli buzlu çay">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/lemonade/Mhsullar-22_1724050678.jpg" alt="Passion meyvəli buzlu çay"></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Passion meyvəli buzlu çay</div>
+                                <div class="main-item-ingredient">Su, buz, limon, portağal, nanə, şərbət.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Lemonade" data-name="The placebo">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/lemonade/The_placebo_1724050849.jpg" alt="The placebo"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">The placebo</div>
+                                <div class="main-item-ingredient">Meva şirəsi, darçın tozu, buz, limon, şərbət.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- lemonade -->
+                            <!-- smoothi -->
+                            <div class="main-item All-drinks Smoothie" data-name="Çiyələkli smoothie">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/smoothie/Mhsullar-32_1724061744.jpg" alt="Çiyələkli smoothie"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Çiyələkli smoothie</div>
+                                <div class="main-item-ingredient">Çiyələk dondurması, portağal şirəsi, şərbət, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Smoothie" data-name="Limonlu smoothie">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/smoothie/Mhsullar-33_1724061557.jpg" alt="Limonlu smoothie"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Limonlu smoothie</div>
+                                <div class="main-item-ingredient">Limon dondurması, portağal şirəsi, limon, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>                             
+                            <div class="main-item All-drinks Smoothie" data-name="Portağallı smoothie">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/smoothie/Mhsullar-34_1724061909.jpg" alt="Portağallı smoothie"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Portağallı smoothie</div>
+                                <div class="main-item-ingredient">Portağal dondurması, portağal, meva şirəsi, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- smoothi -->
+                             <!-- mojito -->
+                            <div class="main-item All-drinks Mojito" data-name="Blue mojito">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/mojito/Mhsullar-13_1724050308.jpg" alt="Blue mojito"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Blue mojito</div>
+                                <div class="main-item-ingredient">Şərbət, yaşıl limon, nanə yarpaqları, soda, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div>
+                            <div class="main-item All-drinks Mojito" data-name="Coco mojito">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/mojito/Mhsullar-14_1724050398.jpg" alt="Coco mojito"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Coco mojito</div>
+                                <div class="main-item-ingredient">Meyvə soda, buz, limon, nanə, şərbət.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Mojito" data-name="Red mojito">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/mojito/Mhsullar-20_1724050455.jpg" alt="Red mojito"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Red mojito</div>
+                                <div class="main-item-ingredient">Şərbət, yaşıl limon, nanə yarpaqları, soda, buz.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- mojito -->
+                            <!-- freshers -->
+                            <div class="main-item All-drinks Freshers" data-name="Nar fresh">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/freshers/Nar_fre_1724053547.jpg" alt="Nar fresh"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Nar fresh</div>
+                                <div class="main-item-ingredient">Yeni sıxılmış nar şirəsi (mövsümi)</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Freshers" data-name="Portağal & alma fresh">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/freshers/Portaal_alma_fre_1724053464.jpg" alt="Portağal & alma fresh"></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Portağal & alma fresh</div>
+                                <div class="main-item-ingredient">Yeni sıxılmış alma və portağal şirəsi.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Freshers" data-name="Təzə qreypfrut fresh">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/freshers/qreyfurt_fre_1724053641.jpg" alt="Təzə qreypfrut fresh"></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Təzə qreypfrut fresh</div>
+                                <div class="main-item-ingredient">Yeni sıxılmış qreypfrut şirəsi.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Dollarla dəyiş</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                                <div>
+                                    <button class="favorite-btn">Sevimlilərə əlavə et</button>
+                                </div>
+                            </div> 
+                            <!-- freshers -->
+                            <!-- drinks hissesi bitdi -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="./paidMenuAZ.js"></script>
+</body>
+</html>

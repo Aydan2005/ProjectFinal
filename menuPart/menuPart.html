@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./menuPart.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="header-container">
+                <div><img src="./img/logo2.png" alt="restaurant logo" class="header-logo"></div>
+                <div class="header-item"><a href="../freePart/freePart.html" class="header-link">Home</a></div>
+                <div class="header-item"><a href="./menuPart.html" class="header-link">Menu</a></div>
+                <div class="header-item"><a href="../aboutPart/aboutPart.html" class="header-link">About</a></div>
+                <div class="header-item">
+                    <div class="language-main">Change language</div>
+                    <div class="language-part active">
+                        <div class="language"><button class="button-AZ">Az</button></div>
+                        <div class="language"><button class="button-EN">En</button></div>
+                    </div>
+                </div>
+                <div class="header-item header-profile"><a href="" class="header-link">MA</a></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="section1-container">
+                <div>
+                    <input type="text" id="search-Input" placeholder="Search...">
+                </div>
+            </div>
+            <div class="menu-header">New on The Menu</div>
+        </section>
+        <section class="second-section">
+            <div class="section2-main">
+                <div class="filters">
+                    <div>
+                        <button class="new-meals" data-category="new-meals">New on the Menu</button>
+                    </div>
+                    <div>
+                        <button class="filter-btns meals-btn" data-category="All-meals">-Meals</button>
+                        <div class="filter-main-part meal passive">
+                            <button class="filter-btns" data-category="Breakfast">Breakfast</button>
+                            <button class="filter-btns" data-category="Main-dishes">Main dishes</button>
+                            <button class="filter-btns" data-category="Hot-dishes">Hot dishes(chicken)</button>
+                            <button class="filter-btns" data-category="Burger">Burger</button>
+                            <button class="filter-btns" data-category="Pizza">Pizza</button>
+                            <button class="filter-btns" data-category="Sandwich">Sandwich</button>
+                            <button class="filter-btns" data-category="Kebabs">Kebabs</button>
+                            <button class="filter-btns" data-category="Salad">Salad</button>
+                            <button class="filter-btns" data-category="Pasta">Pasta</button>
+                            <button class="filter-btns" data-category="Pilaf">Pilaf</button>
+                            <button class="filter-btns" data-category="Taco">Taco</button>
+                            <button class="filter-btns" data-category="Roll">Roll</button>
+                            <button class="filter-btns" data-category="Sauce">Sauce</button>
+                            <button class="filter-btns" data-category="Soup">Soup</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="filter-btns sweets-btn" data-category="All-sweets">-Sweets</button>
+                        <div class="filter-main-part sweet passive">
+                            <button class="filter-btns" data-category="Cake">Cake</button>
+                            <button class="filter-btns" data-category="Cheesecake">Cheesecake</button>
+                            <button class="filter-btns" data-category="Waffle">Waffle</button>
+                            <button class="filter-btns" data-category="Crepe">Crepe</button>
+                            <button class="filter-btns" data-category="Milk-sweets">Milk sweets</button> 
+                            <button class="filter-btns" data-category="Ice-cream-desserts">Ice Cream desserts</button>
+                            <button class="filter-btns" data-category="Pancake">Pancake</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="filter-btns bakery-btn" data-category="All-bakery">-Bakery products</button>
+                        <div class="filter-main-part bakery passive">
+                            <button class="filter-btns" data-category="Croissant">Croissant</button>
+                            <button class="filter-btns" data-category="Shorgogal">Shorgogal</button>
+                            <button class="filter-btns" data-category="Bagels">Bagels</button>
+                            <button class="filter-btns" data-category="Achma">Achma</button>
+                            <button class="filter-btns" data-category="Pogacha">Pogacha</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="filter-btns drinks-btn" data-category="All-drinks">-Drinks</button>
+                        <div class="filter-main-part drink passive">
+                            <button class="filter-btns" data-category="Tea">Tea</button>
+                            <button class="filter-btns" data-category="Coffee">Coffee</button>
+                            <button class="filter-btns" data-category="Frozen-drinks">Frozen drinks</button>
+                            <button class="filter-btns" data-category="Lemonade">Lemonade</button>
+                            <button class="filter-btns" data-category="Smoothie">Smoothie</button>
+                            <button class="filter-btns" data-category="Mojito">Mojito</button>
+                            <button class="filter-btns" data-category="Freshers">Freshers</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="main-container">
+                            <div class="main-item new-meals" data-name="Smoke pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/FumePizza.jpg" alt=""></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name">Smoke pizza</div>
+                                <div class="main-item-ingredient">Special dough, smoked veal ribs, mozzarella cheese, parmesan cheese, pizza tomato sauce, pizza cream sauce, arugula.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item new-meals" data-name="ushi crepe with cottage cheese">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/KesmikliSuşiKrep.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Sushi crepe with cottage cheese</div>
+                                <div class="main-item-ingredient">Crepe dough, cottage cheese, sour cream, strawberries, fruit decoration.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item new-meals" data-name="Dove">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/Kumru.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Dove</div>
+                                <div class="main-item-ingredient">Tortilla lavash, french fries, sausage, salami, sucuk, ham, cheddar cheese, honey mustard sauce, green salad, ketchup, mayonnaise.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item new-meals" data-name="Gogal burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/newOnMenu/QoğalBurger.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Gogal burger</div>
+                                <div class="main-item-ingredient">Gogal, meatballs, french fries, tartar sauce, lettuce, tomato, pickles, green salad, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+
+                            <!-- yenilikler hissesi bitdi -->
+                            <!-- seher yemeyi hissesi -->
+                            <div class="main-item All-meals Breakfast" data-name="American breakfast">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/Amerikan_shr_yemyi.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">American breakfast</div>
+                                <div class="main-item-ingredient">Olady, french fries, veal ham, sausage, egg, jam.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Hot Breakfast">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/isti_shr_yemyi.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Hot Breakfast</div>
+                                <div class="main-item-ingredient">Tomato-egg, cigar pastry, halloumi cheese, cheddar cheese, mushrooms, tomatoes, hot peppers, potato slices, sucuk.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Croissant sandwich">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/KruasanSendvic.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Croissant sandwich</div>
+                                <div class="main-item-ingredient">Croissant, pesto sauce, mozzarella cheese, tomato, green basil.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Cold breakfast">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/SoyuqShrYemeyi.jpg" alt=""></div>
+                                <div class="main-item-money">23.20 ₼</div>
+                                <div class="main-item-name">Cold breakfast</div>
+                                <div class="main-item-ingredient">Egg bread, cigar pastry, oladi, tandoori bread, lavash, fig jam, strawberry jam, cherry jam, tomato, cucumber, nehre oil, butter, salt, honey, cream, white cheese, cheddar cheese, goat cheese, chocolate paste, black and green olives, unlimited tea.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Sausage menemen">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/Sucuqlu_menemen.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Sausage menemen</div>
+                                <div class="main-item-ingredient">Egg, tomato, sausage, green pepper, butter.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Breakfast" data-name="Tray breakfast">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/breakfast/TepsiShrYemeyi.jpg" alt=""></div>
+                                <div class="main-item-money">60 ₼</div>
+                                <div class="main-item-name">Tray breakfast</div>
+                                <div class="main-item-ingredient">Eggs in a pan, eggs with sausage or menemen, water pastry with marash cheese, cigar pastry, bread with eggs, butter, nehre butter, jam, white cheese, cheddar cheese, goat cheese, honey, sour cream, salt, cream, condensed milk, grapes, oranges, tomatoes, cucumbers, lettuce, black and green olives, unlimited tea.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- breakfast hissesi bitdi -->
+                            <!-- main Dishes hissesi basladi  -->
+                            <div class="main-item All-meals Main-dishes" data-name="Crispy dumplings">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Cz-bz_kft.jpg" alt=""></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name">Crispy dumplings</div>
+                                <div class="main-item-ingredient">Grilled meatballs (veal, lamb tail), tomatoes, hot peppers, sautéed vegetables, ketchup. With choice of side dish: french fries or rice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Veal Turkish Delight">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Dana_lokum.jpg" alt=""></div>
+                                <div class="main-item-money">25 ₼</div>
+                                <div class="main-item-name">Veal Turkish Delight</div>
+                                <div class="main-item-ingredient">Grilled beef slices, tomatoes, hot peppers, potatoes, sea salt, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Barbecue roll with cheese">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Kaarl_manqal_drm.jpg" alt="Barbecue roll with cheese"></div>
+                                <div class="main-item-money">24.10 ₼</div>
+                                <div class="main-item-name">Barbecue roll with cheese</div>
+                                <div class="main-item-ingredient">Meatballs (veal, lamb tail), cheddar cheese, colored peppers, tortilla bread, french fries, rice with vegetables, Texas sauce, mayonnaise, greens.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Hazelnut Meatballs with Neapolitan Sauce">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/Neapolitan-Souslu-Fndq-Kft.jpg" alt="Hazelnut Meatballs with Neapolitan Sauce"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Hazelnut Meatballs with Neapolitan Sauce</div>
+                                <div class="main-item-ingredient">Grilled meatballs (veal, lamb tail), potatoes, special bread, Neapolitan sauce, herbs, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Meatballs (in puff pastry)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/t-kft-haval-rkd.jpg" alt="Meatballs (in puff pastry)"></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Meatballs (in puff pastry)</div>
+                                <div class="main-item-ingredient">Meatballs (veal, lamb's tail), puff lavash, lettuce, tomato, pickled cucumber, cheddar cheese, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Main-dishes" data-name="Chicken fajitas">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/mainDishes/tli_fajitas.jpg" alt="Chicken fajitas"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Chicken fajitas</div>
+                                <div class="main-item-ingredient">Grilled chicken, soy sauce, chili pepper, colored pepper, bell pepper, onion, lavash, jalapeno pepper, sweet chili sauce, rice sauce, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- main dishes bitdi -->
+                            <!-- hot dishes basladi -->
+                            <div class="main-item All-meals Hot-dishes" data-name="Roast Chicken with Mushrooms">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Gblkli-toyuq-qovurma_1724330348.jpg" alt=""></div>
+                                <div class="main-item-money">12.60 ₼</div>
+                                <div class="main-item-name">Roast Chicken with Mushrooms</div>
+                                <div class="main-item-ingredient"></div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Chicken with mushroom sauce">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_gblk_sousu_il_1724333736.jpg" alt=""></div>
+                                <div class="main-item-money">17.10 ₼</div>
+                                <div class="main-item-name">Chicken with mushroom sauce</div>
+                                <div class="main-item-ingredient">Chicken fillet, tomatoes, bell peppers, sautéed vegetables, rice pilaf, french fries, honey mustard sauce, mushroom sauce, herbs, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="Chicken kebab">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_izqara_kabab_1724333227.jpg" alt=""></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Chicken kebab</div>
+                                <div class="main-item-ingredient">Grilled chicken, rice, potatoes, eggplant, hot pepper, tomatoes, greens.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_p_i_1724330186.jpg" alt="Chicken skewers"></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Chicken skewers</div>
+                                <div class="main-item-ingredient">Marinated chicken fillet, pepper, cherry tomatoes, spices. With choice of side dish: french fries or rice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Toyuq_qanadlar_ltik_sousu_il.jpg" alt="Chicken wings with rice sauce"></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Chicken wings with rice sauce</div>
+                                <div class="main-item-ingredient">Chicken wings, mozzarella cheese, cherry tomatoes, special fries, rice sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Hot-dishes" data-name="">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/HotDishes(chicken)/Trvzli_izqara_kabab_1724329966.jpg" alt="Grilled kebab with vegetables"></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Grilled kebab with vegetables</div>
+                                <div class="main-item-ingredient">Grilled chicken, green pepper, red pepper, hot pepper, tomato, eggplant, Greek salad, potatoes, bell pepper, herbs.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- hot dish bitdi -->
+                             <!-- burger hissesi basladi -->
+                             <div class="main-item All-meals Burger" data-name="Lahmachun burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Lahmacun_burger_1724417079.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Lahmachun burger</div>
+                                <div class="main-item-ingredient">Special dough, meatballs (veal, lamb's tail), cheddar cheese sauce, lettuce, tomato, pickles, french fries, green salad, onion, lemon, ketchup, mayonnaise.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Mini burgers">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Mini_burger_1724417454.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Mini burgers</div>
+                                <div class="main-item-ingredient">Mini white and black burger buns, patty, lettuce, tomato, cucumber, french fries, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Pizza burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Pizza_burger_1724417578.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Pizza burger</div>
+                                <div class="main-item-ingredient">Special dough, mozzarella cheese, pizza tomato sauce, cheddar cheese sauce, meatballs, lettuce, tomatoes, pickles, french fries, green salad, ketchup, mayonnaise.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Quesadilla burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Quesadilla-burger_1724418479.jpg" alt=""></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Quesadilla burger</div>
+                                <div class="main-item-ingredient">Specially prepared lavash, grilled meatballs, cheddar cheese, tomatoes, pickles, iceberg lettuce, french fries, tartar sauce, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Cheeseburger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/ZBURGER2_1724414979.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Cheeseburger</div>
+                                <div class="main-item-ingredient">Burger bun, grilled meatball, french fries, lettuce, tomato, pickles, cheddar cheese, special sauce, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Burger" data-name="Zinger burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Burger/Zinger-burger_1724417749.jpg" alt=""></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Zinger burger</div>
+                                <div class="main-item-ingredient">Burger bun, chicken fillet, lettuce, french fries, tartar sauce, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- burger hissesi bitdi -->
+                            <!-- pizza hissesi basladi -->
+                            <div class="main-item All-meals Pizza" data-name="Pizza with BBQ sauce">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/BBQ_souslu_pizza_1724314144.jpg" alt=""></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Pizza with BBQ sauce</div>
+                                <div class="main-item-ingredient">Special dough, mozzarella cheese, pizza tomato sauce, pizza cream sauce, BBQ sauce, chicken fillet, olives, jalapeno peppers.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Margherita pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Marqarita_pizza_1724311765.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Margherita pizza</div>
+                                <div class="main-item-ingredient">Special dough, mozzarella cheese, pizza tomato sauce, pizza cream sauce, cherry tomatoes, green basil.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Neapolitan pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Neapolitan_pizza_1724310961.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Neapolitan pizza</div>
+                                <div class="main-item-ingredient">Special dough, mozzarella cheese, Neapolitan sauce, pizza cream sauce, cherry tomatoes, green basil.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Polo pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Polo_pizza_1724312249.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Polo pizza</div>
+                                <div class="main-item-ingredient">Special dough, chicken fillet, mozzarella cheese, tomatoes, peppers, corn, special pizza sauce, pizza cream sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Mixed pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Qarq_pizza_1724313780.jpg" alt=""></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name">Mixed pizza</div>
+                                <div class="main-item-ingredient">Special dough, salami, sausage, corn, mushrooms, mozzarella cheese, black olives, special pizza sauce, pizza cream sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pizza" data-name="Salami pizza">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pizza/Salami_pizza_1724311973.jpg" alt=""></div>
+                                <div class="main-item-money">18 ₼</div>
+                                <div class="main-item-name">Salami pizza</div>
+                                <div class="main-item-ingredient">Special dough, mozzarella cheese, pizza tomato sauce, pizza cream sauce, salami.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- pizza hissesi bitib -->
+                             <!-- sandwich hissesi baslayir -->
+                             <div class="main-item All-meals Sandwich" data-name="Club sandwich">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Klub_sendvi_1724244941.jpg" alt=""></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Club sandwich</div>
+                                <div class="main-item-ingredient">Toast, chicken fillet, lettuce, veal ham, cheddar cheese, tomato, cucumber, pickles, egg (optional).</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Club sandwich set">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Klub_sendvi_set_1724245041.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Club sandwich set</div>
+                                <div class="main-item-ingredient">Toast, chicken fillet, lettuce, veal ham, cheddar cheese, tomato, cucumber, pickles, egg (optional), french fries, green salad, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Mixed toast">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Qarq_tost_1724245470.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Mixed toast</div>
+                                <div class="main-item-ingredient">Toast, salami, cheddar cheese, sausage, veal ham, butter.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Chicken sandwich">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Toyuq_sendvi_1724245156.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Chicken sandwich</div>
+                                <div class="main-item-ingredient">Toast bread, chicken fillet, lettuce, tomato, pickled cucumber.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Toyuq_sendvi_set_1724245247.jpg" alt=""></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Zinger burger</div>
+                                <div class="main-item-ingredient">Burger bun, chicken fillet, lettuce, french fries, tartar sauce, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Sandwich" data-name="Zinger burger">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sandwich/Tuna_sendvi_1724245372.jpg" alt=""></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Tuna sandwich</div>
+                                <div class="main-item-ingredient">California bread, tuna, cheddar cheese, mayonnaise, cucumber, tomato, lettuce, greens.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- sandwich hissesi bitib -->
+                             <!-- kabab hissesi baslayir -->
+                             <div class="main-item All-meals Kebabs" data-name="Adana kebab (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Adana_kabab_acl.jpg" alt=""></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name">Adana kebab (spicy)</div>
+                                <div class="main-item-ingredient">Lamb, lamb tail, eggplant puree, barbecue salad, special dough, tomatoes, peppers, pepper paste, garlic, onions, red onions, herbs, bell peppers.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Lula kebab">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/lule_kabab.jpg" alt=""></div>
+                                <div class="main-item-money">17.10 ₼</div>
+                                <div class="main-item-name">Lula kebab</div>
+                                <div class="main-item-ingredient"></div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Lamb shish kebab">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Quzu_i_kabab.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Lamb shish kebab</div>
+                                <div class="main-item-ingredient">Lamb leg, barbecue salad, chicken mince, pita bread, tomatoes, bell pepper, red pepper, paprika, ground pepper, garlic, onion, herbs, sumac.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Lamb steak kebab (belly)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Quzu_tik_kabab_bel.jpg" alt=""></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Lamb steak kebab (belly)</div>
+                                <div class="main-item-ingredient">Lamb loin, tomatoes, barbecue salad, chicken mince, hot pepper, pita bread, red onion, herbs, sumac.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Chicken shish kebab">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Toyuq_i_kabab_.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Chicken shish kebab</div>
+                                <div class="main-item-ingredient">Chicken, onion appetizer, tomato, greens, hot pepper, sheet lavash.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Kebabs" data-name="Chicken kebab (thigh)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Kebabs/Toyuq_kabab_buddibi.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Chicken kebab (thigh)</div>
+                                <div class="main-item-ingredient">Chicken thigh, tomato, barbecue salad, chicken mince, hot pepper, pita bread, red, bell pepper, garlic, onion, herbs, sumac, ground pepper.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- kabab hissesi bitib -->
+                             <!-- salad hissesi baslayir -->
+                             <div class="main-item  All-meals Salad" data-name="Gavurdagi salad">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Gavurda_salat_1724410761.jpg" alt=""></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name">Gavurdagi salad</div>
+                                <div class="main-item-ingredient">Cucumber, lettuce, tomato, walnuts, lemon, olive oil, herbs, narsharab.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Haidari">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Haydari_1724413859.jpg" alt=""></div>
+                                <div class="main-item-money">3.80 ₼</div>
+                                <div class="main-item-name">Haidari</div>
+                                <div class="main-item-ingredient">Yogurt, garlic, olive oil, dried mint.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Shepherd's salad">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/oban_salat_1724411569.jpg" alt=""></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Shepherd's salad</div>
+                                <div class="main-item-ingredient">Cucumbers, tomatoes, onions, herbs, green peppers, lemon, olive oil.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Caesar Salad">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Sezar_salat_1724410929.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Caesar Salad</div>
+                                <div class="main-item-ingredient">Grilled chicken, tomato, parmesan cheese, iceberg lettuce, seasoned breadcrumbs, Caesar dressing.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Caesar salad with shrimp">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Sezar_salat_krevet_il_1724409730.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Caesar salad with shrimp</div>
+                                <div class="main-item-ingredient">Grilled shrimp, iceberg lettuce, cherry tomatoes, seasoned breadcrumbs, Caesar dressing, Parmesan cheese.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item  All-meals Salad" data-name="Steak salad">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Salad/Steyk_salat_1724409873.jpg" alt=""></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name">Steak salad</div>
+                                <div class="main-item-ingredient">Beef, red beans, eggs, colored peppers, iceberg lettuce, cherry tomatoes, balsamic sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- salad hissesi bitdi -->
+                             <!-- Pasta hissesi baslayir -->
+                             <div class="main-item All-meals Pasta" data-name="Fettuccine Alfredo">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Fettuccine-Alfredo_1724239783.jpg" alt=""></div>
+                                <div class="main-item-money">19.10 ₼</div>
+                                <div class="main-item-name">Fettuccine Alfredo</div>
+                                <div class="main-item-ingredient">Fettuccine noodles, green basil, chicken fillet, parmesan cheese, mushrooms, garlic, onion.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Manti">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Mant_1724240206.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Manti</div>
+                                <div class="main-item-ingredient">Manti dough, veal, onion, rice sauce, mint, sumac, yogurt. (Seasonal).</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Noodles">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Noodle_1724240307.jpg" alt=""></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name">Noodles</div>
+                                <div class="main-item-ingredient">Noodles, chicken fillet, onion, green onion, colored pepper, carrot, soy sauce, sesame.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Penne arrabbiata">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Penne-arrabbiata_1724240119.jpg" alt=""></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name">Penne arrabbiata</div>
+                                <div class="main-item-ingredient">Arrabbiata sauce, pasta, olive oil, garlic, parmesan cheese, green basil.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Penne Da Vinci">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Penne-Da-Vinci_1724240013.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Penne Da Vinci</div>
+                                <div class="main-item-ingredient">Pasta, chicken fillet, parmesan cheese, cream, herbs, mushrooms, colorful peppers, pesto sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-meals Pasta" data-name="Spaghetti Bolognese">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pasta/Spaghetti-bolognese_1724239912.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Spaghetti Bolognese</div>
+                                <div class="main-item-ingredient">Spaghetti, grated parmesan cheese, bolognese sauce (veal), greens.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- pasta hissesi bitdi -->
+                             <!-- Pilaf hissesi -->
+                            <div class="main-item All-meals Pilaf" data-name="Rice">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Dy_1724483926.jpg" alt=""></div>
+                                <div class="main-item-money">2.90 ₼</div>
+                                <div class="main-item-name">Rice</div>
+                                <div class="main-item-ingredient"></div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>  
+                            <div class="main-item All-meals Pilaf" data-name="Fisinjan pilaf">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Fisincan-plov_1724237727.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Fisinjan pilaf</div>
+                                <div class="main-item-ingredient">Meatballs (veal, lamb tail), walnuts, pomegranate sauce, onion, rice pilaf, gazmak.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Pilaf" data-name="Bean pilaf with black beans">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Lobya-plov-aqara-il_1724237499.jpg" alt=""></div>
+                                <div class="main-item-money">16.10 ₼</div>
+                                <div class="main-item-name">Bean pilaf with black beans</div>
+                                <div class="main-item-ingredient">Lamb, rice pilaf, onion, raisins, dried cherries, dried apricots, chestnuts, beans, gazpacho.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Pilaf" data-name="Vegetable pilaf">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/Sbzi-plov_1724237619.jpg" alt=""></div>
+                                <div class="main-item-money">19 ₼</div>
+                                <div class="main-item-name">Vegetable pilaf</div>
+                                <div class="main-item-ingredient">Lamb, rice pilaf, greens, onion, dried cherry plum, gazma, barberry.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Pilaf" data-name="Dill pilaf">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Pilaf/ydl-plov_1724237383.jpg" alt=""></div>
+                                <div class="main-item-money">16.10 ₼</div>
+                                <div class="main-item-name">Dill pilaf</div>
+                                <div class="main-item-ingredient">Lamb, rice pilaf, gazmak, onion, dried plums, barberry, greens.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- Pilaf hissesi bitdi -->
+                            <!-- Taco hissesi basladi -->
+                            <div class="main-item All-meals Taco" data-name="Taco with beef (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_dana_ti_il_acl_1724230407.jpg" alt=""></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Taco with beef (spicy)</div>
+                                <div class="main-item-ingredient">Beef, taco lavash, pepper, bell pepper, red onion, lettuce, sweet chili sauce, tomato, greens, hot pepper.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Taco" data-name="Taco with shrimp (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_krevet_il_acl_1724230721.jpg" alt=""></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name">Taco with shrimp (spicy)</div>
+                                <div class="main-item-ingredient">Panko-crusted shrimp, taco pita bread, lettuce, tomato, red onion, hot pepper, special sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Taco" data-name="Taco Crispy (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_krispi_acl_1724230598.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Taco Crispy (spicy)</div>
+                                <div class="main-item-ingredient">Taco lavash, meatballs, cheddar cheese, lettuce, tomato, red onion, hot pepper, special sauce.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Taco" data-name="Taco with chicken (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Taco/Tako_toyuq_ti_il_acl_1724230281.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Taco with chicken (spicy)</div>
+                                <div class="main-item-ingredient">Chicken fillet, taco lavash, pepper, bell pepper, red onion, lettuce, sweet chili sauce, tomato, greens, hot pepper.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- taco hissesi bitdi  -->
+                            <!-- Roll hissesi basladi -->
+                            <div class="main-item All-meals Roll" data-name="Adana roll (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/Adana_drm_1724323042.jpg" alt=""></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Adana roll (spicy)</div>
+                                <div class="main-item-ingredient">Adana meatballs (veal, lamb tail), french fries, lavash, tomatoes, red onion, greens, hot pepper, sumac, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Roll" data-name="Crepe wrap">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/Krep_Drm_1724322310.jpg" alt=""></div>
+                                <div class="main-item-money">12 ₼</div>
+                                <div class="main-item-name">Crepe wrap</div>
+                                <div class="main-item-ingredient">Crepe dough, chicken fillet, garlic sauce, pickles, french fries, green salad, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Roll" data-name="Caesar roll with meat">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/sezar_roll_tli_1724323941.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Caesar roll with meat</div>
+                                <div class="main-item-ingredient">Beef, french fries, iceberg lettuce, cherry tomatoes, parmesan cheese, Caesar sauce, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Roll" data-name="Meat roll">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/tli_drm_1724323677.jpg" alt=""></div>
+                                <div class="main-item-money">17 ₼</div>
+                                <div class="main-item-name">Meat roll</div>
+                                <div class="main-item-ingredient">Specially marinated veal, country-style potatoes, lavash, pepper, kashar cheese, green salad, bell pepper, special sauce, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Roll" data-name="Chicken shish kebab (spicy)">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/Toyuq_i_drm_1724323157.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Chicken shish kebab (spicy)</div>
+                                <div class="main-item-ingredient">Grilled chicken, french fries, lavash, tomato, red onion, garlic, herbs, bell pepper, bell pepper, pepper, sumac, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Roll" data-name="Grilled meatballs with shish kebab">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Roll/zqara_kft_i_drm_1724323317.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Grilled meatballs with shish kebab</div>
+                                <div class="main-item-ingredient">Meatballs (veal, lamb tail), french fries, lavash, tomatoes, red onion, greens, bell pepper, colored pepper, sumac, mayonnaise, ketchup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- roll hissesi bitdi -->
+                             <!-- Sauce hissesi baslayir -->
+                             <div class="main-item All-meals Sauce" data-name="Balsamic">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Balzamik_sousu_1724327029.jpg" alt=""></div>
+                                <div class="main-item-money">1.90 ₼</div>
+                                <div class="main-item-name">Balsamic</div>
+                                <div class="main-item-ingredient">Sweet white grapes, often the Lambrusco or Trebbiano varieties.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Sauce" data-name="Cheddar cheese">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/eddar_pendiri_sousu_1724326092.jpg" alt=""></div>
+                                <div class="main-item-money">1.90 ₼</div>
+                                <div class="main-item-name">Cheddar cheese</div>
+                                <div class="main-item-ingredient">Grated cheddar cheese (mild or sharp),milk (or light cream),freshly ground black pepper (or white pepper)</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Sauce" data-name="Ketchup">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Ketup_1724327240.jpg" alt=""></div>
+                                <div class="main-item-money">0.90 ₼</div>
+                                <div class="main-item-name">Ketchup</div>
+                                <div class="main-item-ingredient">Spices and seasonings,sugar, vinegar, tomatoes</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Sauce" data-name="Mayonnaise">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Mayonez_1724327080.jpg" alt=""></div>
+                                <div class="main-item-money">0.90 ₼</div>
+                                <div class="main-item-name">Mayonnaise</div>
+                                <div class="main-item-ingredient">Mayonnaise is an emulsion of oil, egg yolk, and an acid, either vinegar or lemon juice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Sauce" data-name="Garlic">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Sarmsaq_sousu_1724326966.jpg" alt=""></div>
+                                <div class="main-item-money">1.90 ₼</div>
+                                <div class="main-item-name">Garlic</div>
+                                <div class="main-item-ingredient">Chopped garlic,lemon juice,oil,butter,parsley,salt</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Sauce" data-name="Tabasco">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Sauce/Tabasko_sousu_1724325995.jpg" alt=""></div>
+                                <div class="main-item-money">5 ₼</div>
+                                <div class="main-item-name">Tabasco</div>
+                                <div class="main-item-ingredient">Aged red peppers, salt and distilled vinegar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                             <!-- Sauce hissesi bitir -->
+                            <!-- Soup hissesi baslayir -->
+                            <div class="main-item All-meals Soup" data-name="Broccoli soup">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Brokoli_orbas_1724325383.jpg" alt=""></div>
+                                <div class="main-item-money">6 ₼</div>
+                                <div class="main-item-name">Broccoli soup</div>
+                                <div class="main-item-ingredient">Broccoli, cream, onion, toasted breadcrumbs, pepper, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Soup" data-name="Dusbara">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/dbr_1724324718.jpg" alt=""></div>
+                                <div class="main-item-money">6.50 ₼</div>
+                                <div class="main-item-name">Dusbara</div>
+                                <div class="main-item-ingredient">Plain dough, lamb, onion, dried mint, vinegar. (seasonal)</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Soup" data-name="Lentil soup">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Mrcimk_orbas_1724324937.jpg" alt=""></div>
+                                <div class="main-item-money">6.10 ₼</div>
+                                <div class="main-item-name">Lentil soup</div>
+                                <div class="main-item-ingredient">Red lentils, special sauce, lemon, toasted bread crumbs (crullers), bell pepper, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Soup" data-name="Tomato soup">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Pomidor_orbas_1724325259.jpg" alt=""></div>
+                                <div class="main-item-money">6.60 ₼</div>
+                                <div class="main-item-name">Tomato soup</div>
+                                <div class="main-item-ingredient">Peeled tomatoes, carrots, cheddar cheese, tomatoes, cream, toasted breadcrumbs (crullers), butter, pepper, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-meals Soup" data-name="Creamy mushroom soup">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/meals/Soup/Qaymaql_gblk_orbas_1724325106.png" alt=""></div>
+                                <div class="main-item-money">6.10 ₼</div>
+                                <div class="main-item-name">Creamy mushroom soup</div>
+                                <div class="main-item-ingredient">Mushrooms, potatoes, cream, onion, toasted breadcrumbs (crullers), pepper, spices.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- Soup hissesi bitir -->
+
+                             <!-- meals hissesi bitir -->
+                            <!-- sweets hissesi baslayir -->
+                            <!-- cake -->
+                            <div class="main-item All-sweets Cake" data-name="Caramel cake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cake/Mhsullar43_1723447700.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Caramel cake</div>
+                                <div class="main-item-ingredient">Cocoa biscuit, grillage, chocolate cream, hazelnuts, caramel sauce</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cake" data-name="Chocolate cake with profiteroles">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cake/Mhsullar44_1723447304.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Chocolate cake with profiteroles</div>
+                                <div class="main-item-ingredient">Cocoa biscuit, whipped cream, chocolate pieces, profiteroles</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cake" data-name="Honey cake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cake/Mhsullar55_1723448323.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Honey cake</div>
+                                <div class="main-item-ingredient">Honey biscuit, sour cream, butter cream with cooked and condensed milk.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- cake -->
+                             <!-- chesecake -->
+                            <div class="main-item All-sweets Cheesecake" data-name="Lemon cheesecake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cheesecake/Mhsullar33_1723270862.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Lemon cheesecake</div>
+                                <div class="main-item-ingredient">Cream cheese, eggs, powdered sugar, cream, gelatin, biscuit with cookies, lemon curd.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cheesecake" data-name="Berry cheesecake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cheesecake/Mhsullar36_1723271072.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Berry cheesecake</div>
+                                <div class="main-item-ingredient">Cream cheese, eggs, powdered sugar, cream, gelatin, biscuit biscuit, raspberry jelly, strawberry jam, blackcurrant jam.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Cheesecake" data-name="Currant cheesecake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/cheesecake/Mhsullar35_1723271312.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Currant cheesecake</div>
+                                <div class="main-item-ingredient">Cream cheese, eggs, powdered sugar, cream, gelatin, biscuit with cookies, currant jam</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                             <!-- chesecake -->
+                            <!-- waffle -->
+                            <div class="main-item All-sweets Waffle" data-name="Twist waffle">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/waffle/Bkm_vafl_bananl_iylkli_1723288253.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Twist waffle</div>
+                                <div class="main-item-ingredient">Waffle dough, milk chocolate, strawberries, bananas, powdered sugar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Waffle" data-name="Candy waffles">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/waffle/Candy_vafl_1723287992.jpg" alt=""></div>
+                                <div class="main-item-money">16 ₼</div>
+                                <div class="main-item-name">Candy waffles</div>
+                                <div class="main-item-ingredient">Waffles, cornet with sauce, meringue, whipped cream, marshmallow, cotton candy, milk chocolate, colored candy</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Waffle" data-name="Peanut waffle">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/waffle/Mhsullar70_1723287800.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Peanut waffle</div>
+                                <div class="main-item-ingredient">Plain waffle, banana, milk chocolate, white chocolate, peanut butter.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- waffle -->
+                            <!-- crepe -->
+                            <div class="main-item All-sweets Crepe" data-name="Fruity fettuccine crepe">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/crepe/Fettuccine_krep_meyvli_1673435314.jpg" alt=""></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Fruity fettuccine crepe</div>
+                                <div class="main-item-ingredient">Crepe batter, banana, strawberry, plain ice cream, milk chocolate.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Crepe" data-name="Special Crepe">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/crepe/Special_krep_1723275811.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Special Crepe</div>
+                                <div class="main-item-ingredient">Crepe dough, banana, eclair, whipped cream, roasted hazelnuts, milk chocolate, chocolate praline.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-sweets Crepe" data-name="Strawberry sushi crepe">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/crepe/Zrif_sui_krep_izkeyk_kremli_1673445752.jpg" alt=""></div>
+                                <div class="main-item-money">15 ₼</div>
+                                <div class="main-item-name">Strawberry sushi crepe</div>
+                                <div class="main-item-ingredient">Crepe dough, cream cheesecake, strawberries, milk chocolate, powdered sugar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- crepe -->
+                            <!-- milk dessert -->
+                            <div class="main-item All-sweets Milk-sweets" data-name="Oven rice pudding">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/milkDessert/frn_stla_1723459500.jpg" alt=""></div>
+                                <div class="main-item-money">8 ₼</div>
+                                <div class="main-item-name">Oven rice pudding</div>
+                                <div class="main-item-ingredient">Milk, rice, powdered sugar</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Milk-sweets" data-name="Rice pudding Roulette">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/milkDessert/Mhsullar17_1723459164.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Rice pudding Roulette</div>
+                                <div class="main-item-ingredient">Roulette rice pudding, ice cream, tahini caramel sauce, meringue decoration, seasonal fruit, biscuit crumbs. Served with a cup of tea.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Milk-sweets" data-name="Kazandibi">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/milkDessert/qazandibi_1723458233.jpg" alt=""></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Kazandibi</div>
+                                <div class="main-item-ingredient">Milk, rice, powdered sugar</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- milk dessert -->
+                            <!-- icecream-dessert -->
+                            <div class="main-item All-sweets Ice-cream-desserts" data-name="Ice cream boom">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/iceCreamDessert/Mhsullar11_1723467436.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Ice cream boom</div>
+                                <div class="main-item-ingredient">Fantasy, strawberry and banana ice cream, cornet, roasted hazelnuts, chocolate pieces, chocolate sauce, cream.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Ice-cream-desserts" data-name="Brownie with ice cream">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/iceCreamDessert/Mhsullar14_1723467299.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Brownie with ice cream</div>
+                                <div class="main-item-ingredient">Brownie, cream cheesecake, plain ice cream, peanut butter.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Ice-cream-desserts" data-name="Banana split">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/iceCreamDessert/Mhsullar8_1723469984.jpg" alt=""></div>
+                                <div class="main-item-money">13 ₼</div>
+                                <div class="main-item-name">Banana split</div>
+                                <div class="main-item-ingredient">Caramel, chocolate and banana ice creams, banana, cornet pieces, roasted hazelnuts, chocolate praline, cream.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- icecream-dessert -->
+                            <!-- pancake -->
+                            <div class="main-item All-sweets Pancake" data-name="Banana pancake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/pancake/Pankek_bananl_1671700731.jpg" alt=""></div>
+                                <div class="main-item-money">9 ₼</div>
+                                <div class="main-item-name">Banana pancake</div>
+                                <div class="main-item-ingredient">Pancakes, bananas, jam, condensed milk, milk chocolate.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Pancake" data-name="Milk chocolate pancake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/pancake/Pankek_sdl_okoladl_1723290313.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Milk chocolate pancake</div>
+                                <div class="main-item-ingredient">Pancakes, strawberries, powdered sugar, milk chocolate.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-sweets Pancake" data-name="Sweet plate">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/sweets/pancake/Sweet_plate_2_1723289913.jpg" alt=""></div>
+                                <div class="main-item-money">19 ₼</div>
+                                <div class="main-item-name">Sweet plate</div>
+                                <div class="main-item-ingredient">Pancakes, waffles, hazelnut biscotti cookies, whipped cream, condensed milk, jam, banana, strawberry, milk chocolate, powdered sugar.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- pancake -->
+                             <!-- sweets hissesi bitdi -->
+
+                            <!-- bakery hissesi basladi -->
+                            <!-- croisant -->
+                            <div class="main-item All-bakery Croissant" data-name="Banana croissant">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/croisant/Bananl_kruasan_1723210714.jpg" alt=""></div>
+                                <div class="main-item-money">7.60 ₼</div>
+                                <div class="main-item-name">Banana croissant</div>
+                                <div class="main-item-ingredient">Layered pastry, banana, chocolate cream. Served with cappuccino or tea.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Croissant" data-name="Peanut croissant roll">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/croisant/Fstql_kruasan_roll_1720592947.jpg" alt=""></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Peanut croissant roll</div>
+                                <div class="main-item-ingredient">PLayered pastry. Decoration: dark chocolate, peanut butter.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-bakery Croissant" data-name="Creamy strawberry croissant">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/croisant/Kremli_iylkli_kruasan_1723210219.jpg" alt=""></div>
+                                <div class="main-item-money">8.10 ₼</div>
+                                <div class="main-item-name">Creamy strawberry croissant</div>
+                                <div class="main-item-ingredient">Layered pastry, strawberries, chocolate, whipped cream. Served with cappuccino or tea.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- croisant -->
+                            <!-- shorgogal -->
+                            <div class="main-item All-bakery Shorgogal" data-name="Gogals">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/shorgogal/qoallar_1723622159.jpg" alt=""></div>
+                                <div class="main-item-money">3.60 ₼</div>
+                                <div class="main-item-name">Gogals</div>
+                                <div class="main-item-ingredient">Layered buttery dough, spices</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <!-- shorgogal -->
+                            <!-- bagels -->
+                            <div class="main-item All-bakery Begels" data-name="Bagel">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/bagels/simit_1723641393.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Bagel</div>
+                                <div class="main-item-ingredient">Shortcrust pastry with milk, sesame.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Begels" data-name="Bagel with olives and cheddar cheese">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/bagels/Zeytunlu_kaarl_simit_1723641220.jpg" alt=""></div>
+                                <div class="main-item-money">5.60 ₼</div>
+                                <div class="main-item-name">Bagel with olives and cheddar cheese</div>
+                                <div class="main-item-ingredient">Milk dough, olives, cheddar cheese.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- bagels -->
+                            <!-- achma -->
+                            <div class="main-item All-bakery Achma All-bakery Pogacha" data-name="Cheese spread">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/achma/Pendirli_ama_1723641523.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Cheese spread</div>
+                                <div class="main-item-ingredient">Butter dough, white cheese</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Achma All-bakery Pogacha" data-name="Simple opening">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/achma/Sad_ama_1723641620.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Simple opening</div>
+                                <div class="main-item-ingredient">Buttery dough, cheddar cheese</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Achma All-bakery Pogacha" data-name="Olive opening">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/achma/Zeytunlu_ama_1723641760.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Olive opening</div>
+                                <div class="main-item-ingredient">Oily dough, olive paste</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- achma -->
+                            <!-- pogacha -->
+                            <div class="main-item All-bakery Pogacha" data-name="Potato roll">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/pogacha/Kartoflu_poaa_1723642000.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Potato roll</div>
+                                <div class="main-item-ingredient">Fatty milk dough, potatoes.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Pogacha" data-name="Cheese bun">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/pogacha/Pendirli_poaa_1723642809.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Cheese bun</div>
+                                <div class="main-item-ingredient">Fatty milk dough, white cheese</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-bakery Pogacha" data-name="Minced meat bun">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/bakery/pogacha/Qiymli_poaa_1723642927.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Minced meat bun</div>
+                                <div class="main-item-ingredient">Fatty milk dough, fried minced meat</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- pogacha -->
+                            <!-- bakery hissesi bitdi -->
+                            <!-- drinks hissesi basladi -->
+                            <!-- tea -->
+                            <div class="main-item All-drinks Tea" data-name="Sahlab flower tea">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/tea/Mhsullar-21_1723701507.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Sahlab flower tea</div>
+                                <div class="main-item-ingredient">Sahlab flower, water.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Tea" data-name="arl Grey tea">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/tea/Mhsullar-3_1723701978.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Earl Grey tea</div>
+                                <div class="main-item-ingredient">Bergamot-flavored black tea, water</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Tea" data-name="Apple Cinnamon Linden Tea">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/tea/Mhsullar_1723700976.jpg" alt=""></div>
+                                <div class="main-item-money">14 ₼</div>
+                                <div class="main-item-name">Apple Cinnamon Linden Tea</div>
+                                <div class="main-item-ingredient">Linden, dried apples, cinnamon stick, water</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- tea -->
+                            <!-- coffee -->
+                            <div class="main-item All-drinks Coffee" data-name="American">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/coffee/amerikano_1723708980.jpg" alt=""></div>
+                                <div class="main-item-money">5 ₼</div>
+                                <div class="main-item-name">American</div>
+                                <div class="main-item-ingredient">Coffee, milk, water, hazelnut biscotti cookies.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Coffee" data-name="Espresso">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/coffee/Mhsullar-23_1723708106.jpg" alt=""></div>
+                                <div class="main-item-money">4 ₼</div>
+                                <div class="main-item-name">Espresso</div>
+                                <div class="main-item-ingredient">Coffee, water, hazelnut biscotti cookies.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Coffee" data-name="Cappuccino">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/coffee/Mhsullar-28_1723709569.jpg" alt=""></div>
+                                <div class="main-item-money">6 ₼</div>
+                                <div class="main-item-name">Cappuccino</div>
+                                <div class="main-item-ingredient">Coffee, milk cream, hazelnut biscotti cookies.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- coffee -->
+                             <!-- frozen drinks -->
+                            <div class="main-item All-drinks Frozen-drinks" data-name="Banana milkshake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/Frozen-drinks/Bananl_milkeyk_1729162283.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Banana milkshake</div>
+                                <div class="main-item-ingredient">Banana ice cream, syrup, milk, cream, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Frozen-drinks" data-name="Strawberry milkshake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/Frozen-drinks/iylkli_milkeyk_1729162199.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Strawberry milkshake</div>
+                                <div class="main-item-ingredient">Strawberry ice cream, syrup, milk, cream, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Frozen-drinks" data-name="Oreo milkshake">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/Frozen-drinks/Oreolu_milkeyk_1729162110.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Oreo milkshake</div>
+                                <div class="main-item-ingredient">Fantasy ice cream, syrup, oreo, milk, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                             <!-- frozen drinks -->
+                            <!-- lemonade -->
+                            <div class="main-item All-drinks Lemonade" data-name="Ice tea mango">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/lemonade/ce_tea_mango_1724050759.jpg" alt=""></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Ice tea mango</div>
+                                <div class="main-item-ingredient">Tea, water, lemon, syrup, mint, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Lemonade" data-name="Passion fruit ice tea">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/lemonade/Mhsullar-22_1724050678.jpg" alt=""></div>
+                                <div class="main-item-money">7 ₼</div>
+                                <div class="main-item-name">Passion fruit ice tea</div>
+                                <div class="main-item-ingredient">Water, ice, lemon, orange, mint, syrup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Lemonade" data-name="he placebo">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/lemonade/The_placebo_1724050849.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">The placebo</div>
+                                <div class="main-item-ingredient">Fruit juice, cinnamon powder, ice, lemon, syrup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- lemonade -->
+                            <!-- smoothi -->
+                            <div class="main-item All-drinks Smoothie" data-name="Strawberry smoothie">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/smoothie/Mhsullar-32_1724061744.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Strawberry smoothie</div>
+                                <div class="main-item-ingredient">Strawberry ice cream, orange juice, syrup, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Smoothie" data-name="Lemon smoothie">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/smoothie/Mhsullar-33_1724061557.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Lemon smoothie</div>
+                                <div class="main-item-ingredient">Lemon ice cream, orange juice, lemon, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>                             
+                            <div class="main-item All-drinks Smoothie" data-name="Orange smoothie">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/smoothie/Mhsullar-34_1724061909.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Orange smoothie</div>
+                                <div class="main-item-ingredient">Orange ice cream, orange, fruit juice, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- smoothi -->
+                             <!-- mojito -->
+                            <div class="main-item All-drinks Mojito" data-name="Blue mojito">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/mojito/Mhsullar-13_1724050308.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Blue mojito</div>
+                                <div class="main-item-ingredient">Syrup, green lemon, mint leaves, soda, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div>
+                            <div class="main-item All-drinks Mojito" data-name="Coco mojito">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/mojito/Mhsullar-14_1724050398.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Coco mojito</div>
+                                <div class="main-item-ingredient">Fruit soda, ice, lime, mint, syrup.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Mojito" data-name="Red mojito">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/mojito/Mhsullar-20_1724050455.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Red mojito</div>
+                                <div class="main-item-ingredient">Syrup, green lemon, mint leaves, soda, ice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                             <!-- mojito -->
+                            <!-- freshers -->
+                            <div class="main-item All-drinks Freshers" data-name="Pomegranate fresh">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/freshers/Nar_fre_1724053547.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Pomegranate fresh</div>
+                                <div class="main-item-ingredient">Freshly squeezed pomegranate juice (seasonal)</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Freshers" data-name="Orange & apple fresh">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/freshers/Portaal_alma_fre_1724053464.jpg" alt=""></div>
+                                <div class="main-item-money">10 ₼</div>
+                                <div class="main-item-name">Orange & apple fresh</div>
+                                <div class="main-item-ingredient">Freshly squeezed apple and orange juice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <div class="main-item All-drinks Freshers" data-name="Fresh grapefruit">
+                                <div class="main-item-img-div"><img class="main-item-img" src="./img/drinks/freshers/qreyfurt_fre_1724053641.jpg" alt=""></div>
+                                <div class="main-item-money">11 ₼</div>
+                                <div class="main-item-name">Fresh grapefruit</div>
+                                <div class="main-item-ingredient">Freshly squeezed grapefruit juice.</div>
+                                <div class="convert-part">
+                                    <div>
+                                        <button class="convert-btn">Convert to $</button>
+                                    </div>
+                                    <div class="usd-price"></div>
+                                </div>
+                            </div> 
+                            <!-- freshers -->
+                            <!-- drinks hissesi bitdi -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./menuPart.js"></script>
+</body>
+</html>

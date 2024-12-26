@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cardPartAZ.css">
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="header">
+                <div class="payment-div">
+                    <p class="payment">Ödəniş</p>
+                </div>
+                <div class="header-item">
+                    <div class="language-main">Dili Dəyiş</div>
+                    <div class="language-part active">
+                        <div class="language"><button class="button-AZ">Az</button></div>
+                        <div class="language"><button class="button-EN">En</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Checkout">
+                <div class="Card">
+                    <div class="front">
+                        <div class="card-chip"></div>
+                        <div class="card-logo">KAPITAL<br>BANK</div>
+                        <div class="card-number">
+                            <label>Kart Nömrəsi</label>
+                            <div class="mono">0000 0000 0000 0000</div>
+                        </div>
+                        <div class="card-holder">
+                            <label>Kart Sahibi</label>
+                            <div class="mono">Ad Soyad</div>
+                        </div>
+                        <div class="card-date">
+                            <label>Son İstifadə Tarixi</label>
+                            <div class="mono">1/2025</div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-strip"></div>
+                        <div class="card-logo-back">KAPITAL<br>BANK</div>
+                        <div class="card-code">
+                            <label>CCV</label>
+                            <div class="mono">123</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Form">
+                    <form onsubmit="return false">
+                        <div class="Input">
+                            <label>Kart Nömrəsi</label>
+                            <input id="number" type="number">
+                        </div>
+                        <div class="Input">
+                            <label>Kart Sahibi</label>
+                            <input id="holder" type="text">
+                        </div>
+                        <div class="row">
+                            <div class="Input">
+                                <label>Ay</label>
+                                <select id="month">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="Input">
+                                <label>İl</label>
+                                <select id="year">
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                </select>
+                            </div>
+                            <div class="Input">
+                                <label>CCV</label>
+                                <input id="ccv" type="number">
+                            </div>
+                        </div>
+                        <button class="pay">Ödəniş Et</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="./cardPartAZ.js"></script>
+</body>
+</html>

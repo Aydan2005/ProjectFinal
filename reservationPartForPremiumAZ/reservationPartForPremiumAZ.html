@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./reservationPartForPremiumAZ.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Restoran Rezervasiya</h1>
+            <div class="header-item">
+                <div class="language-main">Dil seçimi</div>
+                <div class="language-part">
+                    <div class="language"><button class="button-AZ">AZ</button></div>
+                    <div class="language"><button class="button-EN">EN</button></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı daxil edin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email daxil edin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+994 XX XXX XX XX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Tarix:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Saat:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Qonaq sayı:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" value="1" required>
+            </div>
+
+            <button class="btn" type="submit">Rezervasiya Et</button>
+        </form>
+        <div id="confirmation-message"></div>
+    </main>
+
+    <script src="./reservationPartForPremiumAZ.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: rgb(139, 69, 19);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header button#go-back {
+    background-color: white;
+    color: rgb(139, 69, 19);
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button#go-back:hover {
+    background-color: rgb(139, 69, 19);
+    color: white;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#favorites-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.favorite-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favorite-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-item-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(139, 69, 19);
+}
+
+.favorite-item-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.favorite-item-ingredients {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.remove-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    #favorites-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .favorite-item {
+        padding: 15px;
+    }
+
+    .remove-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
