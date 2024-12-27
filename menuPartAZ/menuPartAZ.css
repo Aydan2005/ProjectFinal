@@ -142,7 +142,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 10px;
     width: 400px;
-    margin: 0px 0px 100px 60px;
+    margin: 0px 0px 100px 0px;
 }
 .filter-btns{
     padding: 8px 13px;
@@ -246,4 +246,18 @@ body::-webkit-scrollbar {
 .usd-price{
     margin: 10px 0px;
     padding: 5px 10px;
+}
+@media (max-width:1200px){
+    .section2-main{
+        margin: 0px 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .filters{
+        width: 290px;
+    }
+    .main-item{
+        width: 270px;
+        padding: 3px 5px;
+    }
 }
