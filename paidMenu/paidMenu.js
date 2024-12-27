@@ -80,22 +80,13 @@ async function getExchangeRate() {
 
 document.querySelectorAll('.convert-btn').forEach(button => {
     button.addEventListener('click', async (event) => {
-        // hansi elemente click etmisikse onun ana elementi olan main-item
         const mainItem = event.target.closest('.main-item');
         const aznPriceElement = mainItem.querySelector('.main-item-money');
         const usdPriceElement = mainItem.querySelector('.usd-price');
-
-        // Qiyməti AZN-dən götür
         const aznPrice = parseFloat(aznPriceElement.textContent.replace('₼', '').trim());
-
-        // API-dən məzənnəni al
         const aznToUsdRate = await getExchangeRate();
-        if (!aznToUsdRate) return; // Əgər məzənnə alınmazsa, funksiyanı bitir
-
-        // USD qiymətini hesabla
+        if (!aznToUsdRate) return;
         const usdPrice = (aznPrice / aznToUsdRate).toFixed(2);
-
-        // USD qiymətini göstər
         usdPriceElement.textContent = `$${usdPrice}`;
     });
 });
@@ -118,52 +109,14 @@ document.querySelector(".heart").addEventListener("click", () => {
     window.location.href = "../favoritePart/favoritePart.html"; 
 });
 
-
-
-// // Favorite düymələrinə event listener əlavə edirik
-// document.querySelectorAll('.favorite-btn').forEach(button => {
-//     button.addEventListener('click', function() {
-//         const mainItem = this.closest('.main-item');
-//         const itemName = mainItem.querySelector('.main-item-name').textContent;
-//         const itemPrice = mainItem.querySelector('.main-item-money').textContent;
-//         const itemIngredients = mainItem.querySelector('.main-item-ingredient').textContent;
-
-//         // "Add favorite" düyməsini disable edirik
-//         this.disabled = true;
-
-//         // Favoritlərə əlavə etmək üçün array saxlayırıq
-//         let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-
-//         // Bu itemin artıq əlavə olunub-olunmadığını yoxlayırıq
-//         if (!favorites.some(fav => fav.name === itemName)) {
-//             favorites.push({
-//                 name: itemName,
-//                 price: itemPrice,
-//                 ingredients: itemIngredients
-//             });
-//             localStorage.setItem('favorites', JSON.stringify(favorites));
-//         }
-//     });
-// });
-
-
-
-
-// paidMenu-dan favorilere əlavə
 document.querySelectorAll('.favorite-btn').forEach(button => {
     button.addEventListener('click', function() {
         const mainItem = this.closest('.main-item');
         const itemName = mainItem.querySelector('.main-item-name').textContent;
         const itemPrice = mainItem.querySelector('.main-item-money').textContent;
         const itemIngredients = mainItem.querySelector('.main-item-ingredient').textContent;
-
-        // "Add favorite" düyməsini disable edirik
         this.disabled = true;
-
-        // Favoritlərə əlavə etmək üçün array saxlayırıq
         let favorites = JSON.parse(localStorage.getItem('paidMenuFavorites')) || [];
-
-        // Bu itemin artıq əlavə olunub-olunmadığını yoxlayırıq
         if (!favorites.some(fav => fav.name === itemName)) {
             favorites.push({
                 name: itemName,
@@ -185,20 +138,3 @@ burgerDiv.addEventListener("click", () => {
     headerItems.classList.toggle("active1");
 });
 
-
-
-
-
-
-
-
-
-
-
-// document.querySelector(".button-AZ").addEventListener("click", () => {
-//     window.location.href = "../paidMenuAZ/paidMenuAZ.html"; 
-// });
-
-// document.querySelector(".button-AZ").addEventListener("click", () => {
-//     window.location.href = "../paidMenuAZ/paidMenuAZ.html"; 
-// });

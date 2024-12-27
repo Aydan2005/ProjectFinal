@@ -32,33 +32,27 @@
 
 
 
-// Function to update card display dynamically
 document.querySelectorAll("input, select").forEach(function (element) {
     element.addEventListener("input", function () {
         let value = element.value;
 
         if (element.id === "number") {
-            // Restrict card number input to 16 digits and update display
             value = value.replace(/\D/g, '').slice(0, 16).replace(/(.{4})/g, "$1 ").trim();
             document.querySelector(".card-number .mono").textContent = value;
             element.value = value.replace(/ /g, '');
         } else if (element.id === "holder") {
-            // Restrict holder input to letters and spaces only
             value = value.replace(/[^a-zA-Z\s]/g, '');
             document.querySelector(".card-holder .mono").textContent = value;
             element.value = value;
         } else if (element.id === "month") {
-            // Update month
             const currentDate = document.querySelector(".card-date .mono").textContent.slice(3, 7);
             const date = value + "/" + currentDate;
             document.querySelector(".card-date .mono").textContent = date;
         } else if (element.id === "year") {
-            // Update year
             const currentMonth = document.querySelector(".card-date .mono").textContent.slice(0, 2);
             const date = currentMonth + "/" + value;
             document.querySelector(".card-date .mono").textContent = date;
         } else if (element.id === "ccv") {
-            // Restrict CCV to 3 digits
             value = value.replace(/\D/g, '').slice(0, 3);
             document.querySelector(".card-code .mono").textContent = value;
             element.value = value;
@@ -67,8 +61,6 @@ document.querySelectorAll("input, select").forEach(function (element) {
     });
 });
 
-
-// Function to validate form and enable/disable button
 function validateForm() {
     const number = document.getElementById("number").value.trim();
     const holder = document.getElementById("holder").value.trim();

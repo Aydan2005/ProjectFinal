@@ -15,7 +15,6 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
 
-// Mövcud carousel elementini yenilə
 function updateCarousel() {
   carouselItems.forEach((item, index) => {
     item.classList.remove('active');
@@ -25,26 +24,18 @@ function updateCarousel() {
   });
 }
 
-// "Next" düyməsi funksionallığı
 function showNextItem() {
   currentIndex = (currentIndex + 1) % carouselItems.length;
   updateCarousel();
 }
 
-// "Previous" düyməsi funksionallığı
 function showPrevItem() {
   currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
   updateCarousel();
 }
-
-// Avtomatik keçid
 setInterval(showNextItem, 5000);
-
-// Düymə klikləri
 nextBtn.addEventListener('click', showNextItem);
 prevBtn.addEventListener('click', showPrevItem);
-
-// İlk vəziyyəti qur
 updateCarousel();
 
 let buttonMenu = document.querySelector(".go-to-menu");

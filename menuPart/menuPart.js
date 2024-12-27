@@ -87,25 +87,15 @@ async function getExchangeRate() {
     }
 }
 
-// Düymələrə event listener əlavə edin
 document.querySelectorAll('.convert-btn').forEach(button => {
     button.addEventListener('click', async (event) => {
-        // hansi elemente click etmisikse onun ana elementi olan main-item
         const mainItem = event.target.closest('.main-item');
         const aznPriceElement = mainItem.querySelector('.main-item-money');
         const usdPriceElement = mainItem.querySelector('.usd-price');
-
-        // Qiyməti AZN-dən götür
         const aznPrice = parseFloat(aznPriceElement.textContent.replace('₼', '').trim());
-
-        // API-dən məzənnəni al
         const aznToUsdRate = await getExchangeRate();
-        if (!aznToUsdRate) return; // Əgər məzənnə alınmazsa, funksiyanı bitir
-
-        // USD qiymətini hesabla
+        if (!aznToUsdRate) return;
         const usdPrice = (aznPrice / aznToUsdRate).toFixed(2);
-
-        // USD qiymətini göstər
         usdPriceElement.textContent = `$${usdPrice}`;
     });
 });

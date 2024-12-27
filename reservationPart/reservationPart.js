@@ -10,7 +10,6 @@ document.getElementById('reservation-form').addEventListener('submit', function 
 
     const today = new Date().toISOString().split('T')[0];
 
-    // Məhdudiyyətlər
     if (name === "") {
         alert("Adınızı daxil edin.");
         return;
@@ -26,7 +25,6 @@ document.getElementById('reservation-form').addEventListener('submit', function 
         return;
     }
 
-    // Rezervasiya təsdiqi
     document.getElementById('confirmation-message').innerText = 
         `Təşəkkürlər, ${name}. Rezervasiyanız qəbul olundu: ${date}, ${time}, ${guests} qonaq.`;
 });

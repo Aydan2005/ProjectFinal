@@ -37,8 +37,6 @@
 
 
 
-// FavoritePart-da göstərmək üçün
-// document.addEventListener('DOMContentLoaded', () => {
     let favorites = JSON.parse(localStorage.getItem('paidMenuFavorites')) || [];
     const container = document.getElementById('favorites-container');
 
@@ -52,7 +50,6 @@
             <button class="remove-btn">X</button>
         `;
 
-        // Silmə funksiyası əlavə edirik
         itemDiv.querySelector('.remove-btn').addEventListener('click', () => {
             favorites = favorites.filter(fav => fav.name !== item.name);
             localStorage.setItem('paidMenuFavorites', JSON.stringify(favorites));
@@ -62,8 +59,6 @@
         container.appendChild(itemDiv);
     });
 
-    // "Go Back" düyməsinə klikləyəndə əvvəlki səhifəyə qayıdır
     document.getElementById('go-back').addEventListener('click', function() {
         window.location.href = '../paidMenu/paidMenu.html';
     });
-// });

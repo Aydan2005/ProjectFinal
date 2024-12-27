@@ -1,10 +1,6 @@
 let subscribe1 = document.querySelector(".subscribe")
 
 
-// document.getElementById("navigateButton").addEventListener("click", () => {
-//     window.location.href = "newpage.html"; // Keçid ediləcək səhifənin ünvanı
-// });
-
 subscribe1.addEventListener("click",()=>{
     window.location.href = "../freePartAZ/freePartAZ.html"
 })
