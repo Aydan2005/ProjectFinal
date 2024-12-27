@@ -18,16 +18,27 @@ signIn.addEventListener("click", () => {
 });
 
 let submit1 = document.querySelector(".submit1")
-submit1.addEventListener("click",(e)=>{
-    e.preventDefault()
-    window.location.href = "./premiumPart/premium.html"
-})
+
+submit1.addEventListener("click", (e) => {
+  e.preventDefault();
+  const passwordInput1 = document.querySelector("#password");
+  if (passwordInput1.value.length < 6) {
+      alert("Password must be at least 6 characters long!");
+  } else {
+      window.location.href = "./premiumPart/premium.html";
+  }
+});
 
 let submit2 = document.querySelector(".submit2");
-submit2.addEventListener("click",(e)=>{
-    e.preventDefault();
-    window.location.href = "./freePart/freePart.html";
-})
+submit2.addEventListener("click", (e) => {
+  e.preventDefault();
+  const passwordInput2 = document.querySelector("#password-signin");
+  if (passwordInput2.value.length < 6) {
+      alert("Password must be at least 6 characters long!");
+  } else {
+      window.location.href = "./freePart/freePart.html";
+  }
+});
 
 const inputs1 = document.querySelectorAll('.req-inputs1');
 const passwordInput1 = document.querySelector("#password");
@@ -40,10 +51,10 @@ function checkInputs1() {
       break;
     }
   }
-  if (passwordInput1.value.length < 6) { 
-    allFilled1 = false; 
-    alert("Password must be at least 6 characters long!"); 
-  }
+  // if (passwordInput1.value.length < 6) { 
+  //   allFilled1 = false; 
+  //   alert("Password must be at least 6 characters long!"); 
+  // }
   submit1.disabled = !allFilled1;
 }
 
@@ -67,10 +78,10 @@ function checkInputs2() {
       break;
     }
   }
-  if (passwordInput2.value.length < 6) { 
-    allFilled2 = false; 
-    alert("Password must be at least 6 characters long!"); 
-  }
+  // if (passwordInput2.value.length < 6) { 
+  //   allFilled2 = false; 
+  //   alert("Password must be at least 6 characters long!"); 
+  // }
   submit2.disabled = !allFilled2;
 }
 inputs2.forEach(input => {

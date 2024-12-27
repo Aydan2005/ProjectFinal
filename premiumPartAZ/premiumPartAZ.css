@@ -54,24 +54,12 @@
     left: 64%;
     z-index: 100;
 }
-/* .language{
-    background-color: white;
-    border: none;
-    padding: 5px;
-    transition: transform 0.3s ease;
-} */
-/* .language:hover{
-    transform: scale(1.08);
-    background-color: darkgrey;
-    color: white;
-} */
 .active{
     display: none;
 }
 .button-AZ, .button-EN, .button-RU{
     width: 100%;
     font-size: 20px;
-    /* height: 100%; */
     background-color: white;
     border: none;
     padding: 10px;
@@ -120,7 +108,6 @@
     text-align: center;
     font-size: 39px;
     font-weight: 700;
-    /* box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .check-main{

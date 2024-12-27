@@ -461,6 +461,7 @@ body::-webkit-scrollbar {
     display: flex;
     gap: 30px;
 }
+
 @media (min-width:1431px) and (max-width:1600px){
     .main-info{
         border-top-left-radius: 90px;
@@ -629,3 +630,465 @@ body::-webkit-scrollbar {
     .section5-header{font-size: 45px;}
     .footer-header{font-size: 45px;}
 }
+@media (min-width:700px) and (max-width:1000px){
+    .main-info{
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        width: 450px;
+        height: 230px;
+        left: 32%;
+        top: 20vh;
+    }
+    .welcome-header{
+        font-size: 40px;
+        padding: 13px;
+    }
+    .ofisiant{
+        margin: -80px auto 0px;
+        padding: 0px;
+    }
+    .section2{
+        height: 680px;
+    }
+    .forAbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section2-info{
+        font-size: 20px;
+        padding: 15px 40px 0px 40px;
+    }
+    .ofisiant-img{
+        width: 500px;
+    }
+    .section2-about{
+        font-size: 45px;
+        padding: 20px 20px 0px;
+    }
+    .section2-info{
+        width: 100%;
+    }
+    .section3-container2{
+        background-size: 100% 150%;
+        height: 790px;
+    }
+    .section3-main{
+        display: grid;
+        grid-template-columns: 700px;
+        grid-template-rows: 0.5fr 2fr;
+    }
+    .section3-header{
+        font-size: 45px;
+    }
+    .section3-text1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0px 40px 20px;
+    }
+    .section3-text2{
+        line-height: 25px;
+    }
+    .section3-part2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 75px;
+        /* column-gap: 50px; */
+        padding: 50px;
+    }
+    .section4-item1{
+        display: none;
+    }
+    .part2-item-header , .part2-item-main{
+        font-size: 20px;
+    }
+    .section4-container{
+        gap: 0px;
+    }
+    .section4-item1-img {
+        width: 460px;
+    }
+    .section4-item1{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .section4-header{
+        font-size: 45px;
+    }
+    .section4-text1{
+        font-size: 25px;
+    }
+    .section4-types{
+        font-size: 25px;
+    }
+    .section4-types-item{
+        font-size: 20px;
+    }
+    .part2-item{
+        width: 220px;
+    }
+    .btn-reservation{
+        margin: 0px 0px 0px 320px;   
+    }
+    .go-to-menu{
+        width: 220px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .section5-header{font-size: 45px;}
+    .footer-header{font-size: 45px;}
+    .footer-items{
+        gap: 30px;
+    }
+}
+
+@media (min-width:300px) and (max-width:400px){
+    .main-info{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        width: 200px;
+        height: 100px;
+        left: 30%;
+        top: 12vh;
+    }
+    .welcome-header{
+        font-size: 18px;
+        padding: 13px 13px 2px;
+    }
+    .welcome-part{
+        font-size: 14px;
+        padding-top: 2px;
+    }
+    .ofisiant{
+        margin: -80px auto 0px;
+        padding: 0px;
+    }
+    .section2{
+        height: 50vh;
+    }
+    .forAbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section2-info{
+        font-size: 14px;
+        padding: 1px 20px 0px 20px;
+    }
+    .ofisiant-img{
+        width: 500px;
+    }
+    .section2-about{
+        font-size: 20px;
+        padding: 5px 5px 0px;
+    }
+    .section2-info{
+        width: 100%;
+    }
+    .section3-container2{
+        background-size: 100% 150%;
+        height: 750px;
+    }
+    .section3-main{
+        display: grid;
+        grid-template-columns: 700px;
+        grid-template-rows: 0.5fr 2fr;
+    }
+    .section3-header{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .section3-text1 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0px 40px 20px;
+    }
+    .section3-text2{
+        line-height: 20px;
+        font-size: 16px;
+        width: 300px;
+    }
+    .section3-part2 {
+        display: grid;
+        width: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 15px;
+        padding: 10px 50px;
+    }
+    .visible{
+        display: none;
+    }
+    .part2-item-header , .part2-item-main{
+        font-size: 14px;
+    }
+    .section4-container{
+        gap: 0px;
+    }
+    .section4-item1-img {
+        width: 460px;
+    }
+    .section4-item1{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .section4-header{
+        font-size: 20px;
+    }
+    .section4-text1{
+        font-size: 18px;
+    }
+    .section4-types{
+        font-size: 18px;
+    }
+    .section4-types-item-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .section4-item2{
+        margin: 0px;
+        width: 300px;
+    }
+    .section4-types-item{
+        font-size: 16px;
+    }
+    .part2-item{
+        width: 220px;
+    }
+    .btn-reservation{
+        margin: 0px 0px 0px 120px;   
+        width: 150px;
+        font-size: 18px;
+    }
+    .go-to-menu{
+        width: 220px;
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .section5-header{font-size: 20px;}
+    .footer-header{font-size: 25px;}
+    .footer-items{
+        gap: 30px;
+    }
+    .carousel-item{
+        width: 200px;
+        height: 200px;
+    }
+    .comment-text{
+        font-size: 16px;
+    }
+    .comment-author, .comment-stars{
+        font-size: 18px;
+    }
+    .carousel-button{
+        width: 26px;
+        height: 80px;
+        font-size: 18px;
+    }
+    .footer-items{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    .restaurant-name{
+        font-size: 18px;
+    }
+    .address, .additional, .phone, .social {
+        font-size: 16px;
+        padding-top: 5px;
+        color: #7e4b33;
+    }
+    .address-text, .additional-text, .social-text, .phone-text {
+        font-size: 14px;
+        color: rgb(56, 56, 56);
+        padding-top: 5px;
+    }
+    .section3-part1{
+        width: 300px;
+    }
+    .section5{
+        height: 400px;
+    }
+    .btn-reservation {
+        margin: 0px 0px 0px 100px;
+        width: 150px;
+        font-size: 11px;
+        height: 54px;
+    }
+}
+
+
+@media (min-width:400px) and (max-width:700px){
+    .main-info{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        width: 200px;
+        height: 100px;
+        left: 30%;
+        top: 12vh;
+    }
+    .welcome-header{
+        font-size: 18px;
+        padding: 13px 13px 2px;
+    }
+    .welcome-part{
+        font-size: 14px;
+        padding-top: 2px;
+    }
+    .ofisiant{
+        margin: -80px auto 0px;
+        padding: 0px;
+    }
+    .section2{
+        height: 40vh;
+    }
+    .forAbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section2-info{
+        font-size: 14px;
+        padding: 1px 20px 0px 20px;
+    }
+    .ofisiant-img{
+        width: 500px;
+    }
+    .section2-about{
+        font-size: 20px;
+        padding: 5px 5px 0px;
+    }
+    .section2-info{
+        width: 100%;
+    }
+    .section3-container2{
+        background-size: 100% 150%;
+        height: 670px;
+    }
+    .section3-main{
+        display: grid;
+        grid-template-columns: 700px;
+        grid-template-rows: 0.5fr 2fr;
+    }
+    .section3-header{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .section3-text1 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0px 40px 20px;
+    }
+    .section3-text2{
+        line-height: 20px;
+        font-size: 16px;
+        width: 400px;
+    }
+    .section3-part2 {
+        display: grid;
+        width: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 15px;
+        padding: 10px 50px;
+    }
+    .visible{
+        display: none;
+    }
+    .part2-item-header , .part2-item-main{
+        font-size: 14px;
+    }
+    .section4-container{
+        gap: 0px;
+    }
+    .section4-item1-img {
+        width: 460px;
+    }
+    .section4-item1{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .section4-header{
+        font-size: 20px;
+    }
+    .section4-text1{
+        font-size: 18px;
+    }
+    .section4-types{
+        font-size: 18px;
+    }
+    .section4-types-item-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .section4-item2{
+        margin: 0px;
+        width: 300px;
+    }
+    .section4-types-item{
+        font-size: 16px;
+    }
+    .part2-item{
+        width: 220px;
+    }
+    .btn-reservation{
+        margin: 0px 0px 0px 120px;   
+        width: 150px;
+        font-size: 18px;
+    }
+    .go-to-menu{
+        width: 220px;
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .section5-header{font-size: 20px;}
+    .footer-header{font-size: 25px;}
+    .footer-items{
+        gap: 30px;
+    }
+    .carousel-item{
+        width: 200px;
+        height: 200px;
+    }
+    .comment-text{
+        font-size: 16px;
+    }
+    .comment-author, .comment-stars{
+        font-size: 18px;
+    }
+    .carousel-button{
+        width: 26px;
+        height: 80px;
+        font-size: 18px;
+    }
+    .footer-items{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    .restaurant-name{
+        font-size: 18px;
+    }
+    .address, .additional, .phone, .social {
+        font-size: 16px;
+        padding-top: 5px;
+        color: #7e4b33;
+    }
+    .address-text, .additional-text, .social-text, .phone-text {
+        font-size: 14px;
+        color: rgb(56, 56, 56);
+        padding-top: 5px;
+    }
+    .section3-part1{
+        width: 300px;
+    }
+    .section5{
+        height: 400px;
+    }
+} 
